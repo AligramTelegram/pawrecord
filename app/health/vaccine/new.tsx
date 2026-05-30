@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, SafeAreaView, Alert, View, Text, KeyboardAvoidingView, Platform } from 'react-native';
+import { ScrollView, StyleSheet, SafeAreaView, Alert, View, Text, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { z } from 'zod';
@@ -64,6 +64,25 @@ export default function NewVaccineScreen() {
           <Text style={styles.headerTitle}>{f.add_vaccine_title}</Text>
           <Text style={styles.headerSub}>{f.add_vaccine_sub}</Text>
         </View>
+        {!petId && pets.length > 0 && (
+          <Controller control={control} name="pet_id"
+            render={({ field: { onChange, value } }) => (
+              <View style={{ marginBottom: 16 }}>
+                <Text style={{ fontSize: 13, fontWeight: '700', color: Colors.neutral[500], marginBottom: 8 }}>{f.species}</Text>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                  {pets.map(p => (
+                    <TouchableOpacity key={p.id} onPress={() => onChange(p.id)}
+                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderRadius: 20, borderWidth: 2,
+                        borderColor: value === p.id ? Colors.brand.primary : Colors.cardBorder,
+                        backgroundColor: value === p.id ? Colors.brand.primaryLight : Colors.card }}>
+                      <Text style={{ color: value === p.id ? Colors.brand.primary : Colors.neutral[600], fontWeight: '600' }}>{p.name}</Text>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              </View>
+            )}
+          />
+        )}
         <Controller control={control} name="name"
           render={({ field: { onChange, value } }) => (
             <Input icon="💉" label={f.vaccine_name} placeholder={f.vaccine_placeholder} value={value} onChangeText={onChange} error={errors.name?.message} />

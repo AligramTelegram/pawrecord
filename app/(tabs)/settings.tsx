@@ -19,7 +19,7 @@ const LANG_NATIVE: Record<SupportedLanguage, string> = {
   nl: 'Nederlands', sv: 'Svenska', tr: 'Türkçe', zh: '中文',
 };
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id0000000000';
+const APP_STORE_URL = 'https://apps.apple.com/app/id6774904372';
 
 export default function SettingsScreen() {
   const { t: tc, i18n } = useTranslation('common');
@@ -52,7 +52,7 @@ export default function SettingsScreen() {
               <Text style={styles.premiumIcon}>⭐</Text>
               <View>
                 <Text style={styles.premiumTitle}>Premium</Text>
-                <Text style={styles.premiumSub}>{tc('empty.no_records_sub')}</Text>
+                <Text style={styles.premiumSub}>{tc('settings_screen.vaccine_reminders')} · PDF · iCloud</Text>
               </View>
             </View>
             <View style={styles.chevronWrap}><Text style={styles.chevronText}>›</Text></View>

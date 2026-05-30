@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, SafeAreaView, Alert, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
@@ -11,6 +11,7 @@ import { Button } from '../../../src/components/ui/Button';
 import { Colors } from '../../../src/constants/colors';
 import { Spacing } from '../../../src/constants/typography';
 import { createMedication } from '../../../src/db/medications';
+import { getAllPets, Pet } from '../../../src/db/pets';
 
 const schema = z.object({
   pet_id: z.string().min(1),
@@ -38,6 +39,9 @@ export default function NewMedicationScreen() {
     { value: 'as_needed', labelKey: 'forms.freq_as_needed' },
   ];
 
+  const [pets, setPets] = useState<Pet[]>([]);
+  useEffect(() => { getAllPets().then(setPets); }, []);
+
   const { control, handleSubmit, watch, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: { pet_id: petId ?? '', frequency: 'daily', start_date: new Date().toISOString().split('T')[0] },
@@ -63,6 +67,25 @@ export default function NewMedicationScreen() {
           <Text style={styles.headerTitle}>{f.add_med_title}</Text>
           <Text style={styles.headerSub}>{f.add_med_sub}</Text>
         </View>
+        {!petId && pets.length > 0 && (
+          <Controller control={control} name="pet_id"
+            render={({ field: { onChange, value } }) => (
+              <View style={{ marginBottom: 16 }}>
+                <Text style={{ fontSize: 13, fontWeight: '700', color: Colors.neutral[500], marginBottom: 8 }}>{f.species}</Text>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                  {pets.map(p => (
+                    <TouchableOpacity key={p.id} onPress={() => onChange(p.id)}
+                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderRadius: 20, borderWidth: 2,
+                        borderColor: value === p.id ? '#FF6B9D' : Colors.cardBorder,
+                        backgroundColor: value === p.id ? '#FFF0F6' : Colors.card }}>
+                      <Text style={{ color: value === p.id ? '#FF6B9D' : Colors.neutral[600], fontWeight: '600' }}>{p.name}</Text>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              </View>
+            )}
+          />
+        )}
         <Controller control={control} name="name"
           render={({ field: { onChange, value } }) => (
             <Input icon="💊" label={f.med_name} placeholder={f.med_placeholder} value={value} onChangeText={onChange} error={errors.name?.message} />

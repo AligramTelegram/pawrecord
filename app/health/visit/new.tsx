@@ -1,5 +1,5 @@
-import React from 'react';
-import { ScrollView, StyleSheet, SafeAreaView, Alert, View, Text, KeyboardAvoidingView, Platform } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ScrollView, StyleSheet, SafeAreaView, Alert, View, Text, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { z } from 'zod';
@@ -12,6 +12,7 @@ import { Colors } from '../../../src/constants/colors';
 import { Spacing } from '../../../src/constants/typography';
 import { createVisit } from '../../../src/db/visits';
 import { getCurrencyForLang } from '../../../src/utils/currency';
+import { getAllPets, Pet } from '../../../src/db/pets';
 
 const schema = z.object({
   pet_id: z.string().min(1),
@@ -32,6 +33,8 @@ export default function NewVisitScreen() {
   const { petId } = useLocalSearchParams<{ petId?: string }>();
   const f = tc('forms', { returnObjects: true }) as Record<string, string>;
   const currency = getCurrencyForLang(i18n.language);
+  const [pets, setPets] = useState<Pet[]>([]);
+  useEffect(() => { getAllPets().then(setPets); }, []);
 
   const { control, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -56,6 +59,25 @@ export default function NewVisitScreen() {
           <Text style={styles.headerTitle}>{f.add_visit_title}</Text>
           <Text style={styles.headerSub}>{f.add_visit_sub}</Text>
         </View>
+        {!petId && pets.length > 0 && (
+          <Controller control={control} name="pet_id"
+            render={({ field: { onChange, value } }) => (
+              <View style={{ marginBottom: 16 }}>
+                <Text style={{ fontSize: 13, fontWeight: '700', color: Colors.neutral[500], marginBottom: 8 }}>{f.species}</Text>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                  {pets.map(p => (
+                    <TouchableOpacity key={p.id} onPress={() => onChange(p.id)}
+                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderRadius: 20, borderWidth: 2,
+                        borderColor: value === p.id ? '#F39C12' : Colors.cardBorder,
+                        backgroundColor: value === p.id ? '#FEF9E7' : Colors.card }}>
+                      <Text style={{ color: value === p.id ? '#F39C12' : Colors.neutral[600], fontWeight: '600' }}>{p.name}</Text>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              </View>
+            )}
+          />
+        )}
         <Controller control={control} name="date"
           render={({ field: { onChange, value } }) => (
             <DatePickerInput label={f.visit_date} value={value} onChange={onChange} />
@@ -73,7 +95,7 @@ export default function NewVisitScreen() {
         />
         <Controller control={control} name="clinic"
           render={({ field: { onChange, value } }) => (
-            <Input icon="🏥" label={f.clinic_optional} placeholder={f.clinic_optional} value={value ?? ''} onChangeText={onChange} />
+            <Input icon="🏥" label={f.clinic_optional} placeholder="e.g. City Vet Clinic" value={value ?? ''} onChangeText={onChange} />
           )}
         />
         <Controller control={control} name="diagnosis"
