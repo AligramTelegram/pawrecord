@@ -59,7 +59,7 @@ export default function NewMedicationScreen() {
       await createMedication({ ...data, times_per_day: 1, is_active: 1 });
       router.back();
     } catch {
-      Alert.alert('Error', f.error_save);
+      Alert.alert(tc('errors.generic'), f.error_save);
     }
   }
 

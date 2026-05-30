@@ -51,7 +51,7 @@ export default function NewVisitScreen() {
       await createVisit({ pet_id: data.pet_id, date: data.date, reason: data.reason, vet_name: data.vet_name, clinic: data.clinic, diagnosis: data.diagnosis, treatment: data.treatment, cost: data.cost ? parseFloat(data.cost) : undefined, currency: currency.code, notes: data.notes });
       router.back();
     } catch {
-      Alert.alert('Error', f.error_save);
+      Alert.alert(tc('errors.generic'), f.error_save);
     }
   }
 
@@ -100,7 +100,7 @@ export default function NewVisitScreen() {
         />
         <Controller control={control} name="clinic"
           render={({ field: { onChange, value } }) => (
-            <Input icon="🏥" label={f.clinic_optional} placeholder="e.g. City Vet Clinic" value={value ?? ''} onChangeText={onChange} />
+            <Input icon="🏥" label={f.clinic_optional} value={value ?? ''} onChangeText={onChange} />
           )}
         />
         <Controller control={control} name="diagnosis"

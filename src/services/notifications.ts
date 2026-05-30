@@ -21,7 +21,8 @@ export async function requestPermissions(): Promise<boolean> {
   return status === 'granted';
 }
 
-function pick(arr: string[]): string {
+function pick(arr: string[] | undefined): string {
+  if (!arr || arr.length === 0) return '';
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
@@ -44,12 +45,14 @@ function getNotifContent(
     };
   }
 
-  const cfg = n[type];
-  if (!cfg) return { title: `${petName}`, body: extra?.label ?? '' };
+  const cfg = n?.[type];
+  if (!cfg || !cfg.titles) return { title: petName, body: extra?.label ?? '' };
 
+  const title = pick(cfg.titles) || petName;
+  const body = pick(cfg.bodies) || (extra?.label ?? '');
   return {
-    title: fillTemplate(pick(cfg.titles), vars),
-    body: fillTemplate(pick(cfg.bodies), vars),
+    title: fillTemplate(title, vars),
+    body: fillTemplate(body, vars),
   };
 }
 

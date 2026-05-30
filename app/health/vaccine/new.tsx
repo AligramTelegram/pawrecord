@@ -58,7 +58,7 @@ export default function NewVaccineScreen() {
       }
       router.back();
     } catch {
-      Alert.alert('Error', f.error_save);
+      Alert.alert(tc('errors.generic'), f.error_save);
     }
   }
 

@@ -68,7 +68,7 @@ export default function NewPetScreen() {
       await addPet({ name: data.name, species: data.species, breed: data.breed, date_of_birth: data.date_of_birth, gender: data.gender, color: data.color, microchip_id: data.microchip_id });
       router.back();
     } catch {
-      Alert.alert('Error', f.error_save);
+      Alert.alert(tc('errors.generic'), f.error_save);
     }
   }
 
