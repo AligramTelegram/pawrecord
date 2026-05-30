@@ -26,12 +26,6 @@ const REMINDER_TYPES: { type: ReminderType; emoji: string; labelKey: string; col
 
 const DAY_LABELS_FALLBACK = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-function timeToDate(hour: number, minute: number): Date {
-  const d = new Date();
-  d.setHours(hour, minute, 0, 0);
-  return d;
-}
-
 export default function RemindersScreen() {
   const { petId } = useLocalSearchParams<{ petId: string }>();
   const navigation = useNavigation();
@@ -347,8 +341,4 @@ const styles = StyleSheet.create({
   saveBtnText: { color: '#fff', fontSize: 16, fontWeight: '800' },
 
   iosPickerWrap: { backgroundColor: Colors.neutral[100], borderRadius: 14, marginBottom: Spacing.lg, overflow: 'hidden' },
-  timeOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' },
-  timeModal: { backgroundColor: Colors.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 40 },
-  timeDoneBtn: { backgroundColor: Colors.brand.primary, borderRadius: 20, paddingVertical: 14, alignItems: 'center', marginTop: 12 },
-  timeDoneBtnText: { color: '#fff', fontWeight: '700', fontSize: 16 },
 });
