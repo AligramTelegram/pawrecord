@@ -20,7 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#F7F5F0",
+        "backgroundColor": "#5B6EF5",
         "foregroundImage": "./assets/images/icon.png"
       },
       "package": "com.pawrecord.app"
@@ -37,7 +37,7 @@
         {
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "contain",
-          "backgroundColor": "#F7F5F0"
+          "backgroundColor": "#5B6EF5"
         }
       ],
       "expo-localization",
@@ -45,7 +45,7 @@
         "expo-notifications",
         {
           "icon": "./assets/images/icon.png",
-          "color": "#C94F2C"
+          "color": "#5B6EF5"
         }
       ],
       [
