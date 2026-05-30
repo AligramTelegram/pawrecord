@@ -44,7 +44,7 @@ export default function NewWeightScreen() {
       await createWeight({ pet_id: data.pet_id, weight_kg: parseFloat(data.weight_kg), date: data.date, notes: data.notes });
       router.back();
     } catch {
-      Alert.alert('Error', f.error_save);
+      Alert.alert(tc('errors.generic'), f.error_save);
     }
   }
 
