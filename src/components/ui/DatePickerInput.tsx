@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Platform, Modal } from 'react-native';
 import DateTimePicker, { DateTimePickerEvent } from '@react-native-community/datetimepicker';
+import { useTranslation } from 'react-i18next';
 import { Colors } from '../../constants/colors';
+import { formatDate } from '../../utils/dates';
 
 interface DatePickerInputProps {
   label: string;
@@ -26,13 +28,6 @@ function toStr(d: Date): string {
   return `${y}-${m}-${day}`;
 }
 
-function displayDate(str: string): string {
-  if (!str) return '';
-  const d = new Date(str + 'T12:00:00');
-  if (isNaN(d.getTime())) return '';
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-}
-
 const FAR_FUTURE = new Date(2100, 0, 1);
 const FAR_PAST   = new Date(1900, 0, 1);
 
@@ -42,6 +37,7 @@ export function DatePickerInput({
   maximumDate = FAR_FUTURE,
   optional, icon = '📅',
 }: DatePickerInputProps) {
+  const { t: tc, i18n } = useTranslation('common');
   const [open, setOpen] = useState(false);
   const [tempDate, setTempDate] = useState<Date>(toDate(value));
   const hasValue = !!value;
@@ -65,9 +61,13 @@ export function DatePickerInput({
     setOpen(true);
   }
 
+  const displayValue = hasValue ? formatDate(value, i18n.language) : '';
+
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{label}{optional ? ' (optional)' : ''}</Text>
+      <Text style={styles.label}>
+        {label}{optional ? ` (${tc('actions.cancel') === 'Cancel' ? 'optional' : tc('errors.required') === 'This field is required' ? 'optional' : tc('forms.dob_optional').includes('(') ? '' : ''})` : ''}
+      </Text>
 
       <TouchableOpacity
         style={[styles.trigger, open && styles.triggerActive]}
@@ -76,7 +76,7 @@ export function DatePickerInput({
       >
         <Text style={styles.triggerIcon}>{icon}</Text>
         <Text style={[styles.triggerText, !hasValue && styles.placeholder]}>
-          {hasValue ? displayDate(value) : 'Tap to select date'}
+          {hasValue ? displayValue : tc('errors.invalid_date') === 'Please enter a valid date' ? 'Select date' : tc('errors.invalid_date')}
         </Text>
         {hasValue ? (
           <TouchableOpacity onPress={() => onChange('')} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
@@ -107,11 +107,11 @@ export function DatePickerInput({
             <View style={styles.sheetHandle} />
             <View style={styles.sheetHeader}>
               <TouchableOpacity onPress={() => setOpen(false)}>
-                <Text style={styles.cancelText}>Cancel</Text>
+                <Text style={styles.cancelText}>{tc('actions.cancel')}</Text>
               </TouchableOpacity>
               <Text style={styles.sheetTitle}>{label}</Text>
               <TouchableOpacity onPress={confirmIOS}>
-                <Text style={styles.doneText}>Done</Text>
+                <Text style={styles.doneText}>{tc('actions.done')}</Text>
               </TouchableOpacity>
             </View>
 
@@ -131,7 +131,7 @@ export function DatePickerInput({
                 style={styles.clearBtn}
                 onPress={() => { onChange(''); setOpen(false); }}
               >
-                <Text style={styles.clearBtnText}>🗑  Clear date</Text>
+                <Text style={styles.clearBtnText}>🗑  {tc('actions.delete')}</Text>
               </TouchableOpacity>
             )}
           </View>
@@ -143,7 +143,6 @@ export function DatePickerInput({
 
 const styles = StyleSheet.create({
   container: { marginBottom: 18 },
-
   label: {
     fontSize: 13,
     fontWeight: '700',
@@ -151,7 +150,6 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     letterSpacing: 0.2,
   },
-
   trigger: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -179,39 +177,22 @@ const styles = StyleSheet.create({
   placeholder: { color: Colors.neutral[300] },
   chevron: { fontSize: 20, color: Colors.neutral[300] },
   clearIcon: { fontSize: 13, color: Colors.neutral[400], padding: 4 },
-
-  // iOS Modal
-  overlay: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.35)',
-  },
+  overlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.35)' },
   sheet: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
+    position: 'absolute', bottom: 0, left: 0, right: 0,
     backgroundColor: '#F9F9F9',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    borderTopLeftRadius: 20, borderTopRightRadius: 20,
     paddingBottom: 36,
   },
   sheetHandle: {
-    width: 36,
-    height: 4,
-    borderRadius: 2,
+    width: 36, height: 4, borderRadius: 2,
     backgroundColor: Colors.neutral[300],
-    alignSelf: 'center',
-    marginTop: 10,
-    marginBottom: 4,
+    alignSelf: 'center', marginTop: 10, marginBottom: 4,
   },
   sheetHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 14,
-    borderBottomWidth: 0.5,
-    borderBottomColor: Colors.neutral[200],
+    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
+    paddingHorizontal: 20, paddingVertical: 14,
+    borderBottomWidth: 0.5, borderBottomColor: Colors.neutral[200],
   },
   sheetTitle: { fontSize: 16, fontWeight: '700', color: Colors.neutral[900] },
   cancelText: { fontSize: 15, color: Colors.neutral[500] },

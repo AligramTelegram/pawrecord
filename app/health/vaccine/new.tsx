@@ -34,9 +34,16 @@ export default function NewVaccineScreen() {
   const f = tc('forms', { returnObjects: true }) as Record<string, string>;
   const { notificationsEnabled } = useSettingsStore();
 
-  useEffect(() => { getAllPets().then(setPets); }, []);
+  useEffect(() => {
+    getAllPets().then(p => {
+      setPets(p);
+      if (!petId && p.length === 1) {
+        setValue('pet_id', p[0].id);
+      }
+    });
+  }, []);
 
-  const { control, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
+  const { control, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: { pet_id: petId ?? '', date_given: new Date().toISOString().split('T')[0] },
   });

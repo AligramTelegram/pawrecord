@@ -57,7 +57,5 @@ export async function updatePet(id: string, input: Partial<CreatePetInput>): Pro
 
 export async function deletePet(id: string): Promise<void> {
   const db = await getDb();
-  await db.runAsync('UPDATE pets SET is_active = 0, updated_at = ? WHERE id = ?', [
-    new Date().toISOString(), id,
-  ]);
+  await db.runAsync('DELETE FROM pets WHERE id = ?', [id]);
 }

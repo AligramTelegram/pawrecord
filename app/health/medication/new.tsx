@@ -40,7 +40,12 @@ export default function NewMedicationScreen() {
   ];
 
   const [pets, setPets] = useState<Pet[]>([]);
-  useEffect(() => { getAllPets().then(setPets); }, []);
+  useEffect(() => {
+    getAllPets().then(p => {
+      setPets(p);
+      if (!petId && p.length === 1) setValue('pet_id', p[0].id);
+    });
+  }, []);
 
   const { control, handleSubmit, watch, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),

@@ -34,9 +34,14 @@ export default function NewVisitScreen() {
   const f = tc('forms', { returnObjects: true }) as Record<string, string>;
   const currency = getCurrencyForLang(i18n.language);
   const [pets, setPets] = useState<Pet[]>([]);
-  useEffect(() => { getAllPets().then(setPets); }, []);
+  useEffect(() => {
+    getAllPets().then(p => {
+      setPets(p);
+      if (!petId && p.length === 1) setValue('pet_id', p[0].id);
+    });
+  }, []);
 
-  const { control, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
+  const { control, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: { pet_id: petId ?? '', date: new Date().toISOString().split('T')[0] },
   });
