@@ -5,7 +5,6 @@ import { Colors } from '../../constants/colors';
 import { Radius, Spacing } from '../../constants/typography';
 import { SPECIES_EMOJI } from '../../constants/species';
 import { getPetAge } from '../../utils/dates';
-import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 
 const AVATAR_COLORS = [
@@ -21,7 +20,6 @@ interface PetCardProps {
 }
 
 export function PetCard({ pet, onPress }: PetCardProps) {
-  const { } = useTranslation('pets');
   const age = getPetAge(pet.date_of_birth);
   const emoji = SPECIES_EMOJI[pet.species as keyof typeof SPECIES_EMOJI] ?? '🐾';
   const colorIdx = pet.name.charCodeAt(0) % AVATAR_COLORS.length;

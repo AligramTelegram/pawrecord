@@ -7,6 +7,8 @@ import {
   deletePet,
   CreatePetInput,
 } from '../db/pets';
+import { getRemindersByPet } from '../db/reminders';
+import { cancelAllRemindersForPet } from '../services/notifications';
 
 interface PetsState {
   pets: Pet[];
@@ -39,6 +41,14 @@ export const usePetsStore = create<PetsState>((set, get) => ({
   },
 
   removePet: async (id) => {
+    // Bildirim iptal et
+    const reminders = await getRemindersByPet(id);
+    for (const r of reminders) {
+      if (r.notification_ids) {
+        const ids = JSON.parse(r.notification_ids) as string[];
+        await cancelAllRemindersForPet(ids);
+      }
+    }
     await deletePet(id);
     set({ pets: get().pets.filter((p) => p.id !== id) });
   },

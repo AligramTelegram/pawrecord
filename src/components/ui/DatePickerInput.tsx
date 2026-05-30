@@ -65,9 +65,7 @@ export function DatePickerInput({
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>
-        {label}{optional ? ` (${tc('actions.cancel') === 'Cancel' ? 'optional' : tc('errors.required') === 'This field is required' ? 'optional' : tc('forms.dob_optional').includes('(') ? '' : ''})` : ''}
-      </Text>
+      <Text style={styles.label}>{label}</Text>
 
       <TouchableOpacity
         style={[styles.trigger, open && styles.triggerActive]}
@@ -76,7 +74,7 @@ export function DatePickerInput({
       >
         <Text style={styles.triggerIcon}>{icon}</Text>
         <Text style={[styles.triggerText, !hasValue && styles.placeholder]}>
-          {hasValue ? displayValue : tc('errors.invalid_date') === 'Please enter a valid date' ? 'Select date' : tc('errors.invalid_date')}
+          {hasValue ? displayValue : tc('actions.add') + ' ' + label.toLowerCase() + '...'}
         </Text>
         {hasValue ? (
           <TouchableOpacity onPress={() => onChange('')} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>

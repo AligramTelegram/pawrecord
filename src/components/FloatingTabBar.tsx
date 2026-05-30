@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: Colors.card,
     borderRadius: 40,
     paddingVertical: 8,
     paddingHorizontal: 12,
