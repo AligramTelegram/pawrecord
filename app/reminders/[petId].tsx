@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   View, Text, ScrollView, StyleSheet, SafeAreaView,
-  TouchableOpacity, Switch, Alert, Modal, Linking,
+  TouchableOpacity, Switch, Alert, Modal, Linking, Platform,
 } from 'react-native';
 import { useLocalSearchParams, useNavigation } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -224,31 +224,33 @@ export default function RemindersScreen() {
 
           {/* Time picker */}
           <Text style={styles.sheetLabel}>{ri.time}</Text>
-          <TouchableOpacity style={styles.timeTrigger} onPress={() => setShowTimePicker(true)} activeOpacity={0.8}>
-            <Text style={styles.timeEmoji}>🕐</Text>
-            <Text style={styles.timeText}>{formatTime(newTime.getHours(), newTime.getMinutes())}</Text>
-          </TouchableOpacity>
-
-          <Modal visible={showTimePicker} transparent animationType="fade">
-            <View style={styles.timeOverlay}>
-              <View style={styles.timeModal}>
+          {Platform.OS === 'ios' ? (
+            <View style={styles.iosPickerWrap}>
+              <DateTimePicker
+                value={newTime}
+                mode="time"
+                display="spinner"
+                onChange={(_, d) => { if (d) setNewTime(d); }}
+                style={{ height: 180 }}
+                textColor={Colors.neutral[900]}
+              />
+            </View>
+          ) : (
+            <>
+              <TouchableOpacity style={styles.timeTrigger} onPress={() => setShowTimePicker(true)} activeOpacity={0.8}>
+                <Text style={styles.timeEmoji}>🕐</Text>
+                <Text style={styles.timeText}>{formatTime(newTime.getHours(), newTime.getMinutes())}</Text>
+              </TouchableOpacity>
+              {showTimePicker && (
                 <DateTimePicker
                   value={newTime}
                   mode="time"
-                  display="spinner"
-                  onChange={(_, d) => { if (d) setNewTime(d); }}
-                  style={{ height: 200 }}
-                  textColor={Colors.neutral[900]}
+                  display="default"
+                  onChange={(_, d) => { setShowTimePicker(false); if (d) setNewTime(d); }}
                 />
-                <TouchableOpacity
-                  style={styles.timeDoneBtn}
-                  onPress={() => setShowTimePicker(false)}
-                >
-                  <Text style={styles.timeDoneBtnText}>{tc('actions.done')}</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </Modal>
+              )}
+            </>
+          )}
 
           {/* Day selector */}
           <Text style={styles.sheetLabel}>{ri.days}</Text>
@@ -344,6 +346,7 @@ const styles = StyleSheet.create({
   saveBtn: { backgroundColor: Colors.brand.primary, borderRadius: 28, paddingVertical: 16, alignItems: 'center', shadowColor: Colors.brand.primary, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 10, elevation: 6 },
   saveBtnText: { color: '#fff', fontSize: 16, fontWeight: '800' },
 
+  iosPickerWrap: { backgroundColor: Colors.neutral[100], borderRadius: 14, marginBottom: Spacing.lg, overflow: 'hidden' },
   timeOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' },
   timeModal: { backgroundColor: Colors.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 40 },
   timeDoneBtn: { backgroundColor: Colors.brand.primary, borderRadius: 20, paddingVertical: 14, alignItems: 'center', marginTop: 12 },
