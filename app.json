@@ -14,7 +14,8 @@
       "infoPlist": {
         "NSPhotoLibraryUsageDescription": "PawRecord needs access to your photos to add pet photos.",
         "NSCameraUsageDescription": "PawRecord needs camera access to take pet photos.",
-        "NSUserNotificationUsageDescription": "PawRecord sends reminders for vaccinations and medications."
+        "NSUserNotificationUsageDescription": "PawRecord sends reminders for vaccinations and medications.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -59,6 +60,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e6d74352-9102-4fd6-893a-bdd9d00a4a29"
+      }
     }
   }
 }

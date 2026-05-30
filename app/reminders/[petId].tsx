@@ -229,16 +229,26 @@ export default function RemindersScreen() {
             <Text style={styles.timeText}>{formatTime(newTime.getHours(), newTime.getMinutes())}</Text>
           </TouchableOpacity>
 
-          {showTimePicker && (
-            <DateTimePicker
-              value={newTime}
-              mode="time"
-              display="spinner"
-              onChange={(_, d) => { if (d) setNewTime(d); }}
-              style={{ height: 160 }}
-              textColor={Colors.neutral[900]}
-            />
-          )}
+          <Modal visible={showTimePicker} transparent animationType="fade">
+            <View style={styles.timeOverlay}>
+              <View style={styles.timeModal}>
+                <DateTimePicker
+                  value={newTime}
+                  mode="time"
+                  display="spinner"
+                  onChange={(_, d) => { if (d) setNewTime(d); }}
+                  style={{ height: 200 }}
+                  textColor={Colors.neutral[900]}
+                />
+                <TouchableOpacity
+                  style={styles.timeDoneBtn}
+                  onPress={() => setShowTimePicker(false)}
+                >
+                  <Text style={styles.timeDoneBtnText}>{tc('actions.done')}</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </Modal>
 
           {/* Day selector */}
           <Text style={styles.sheetLabel}>{ri.days}</Text>
@@ -333,4 +343,9 @@ const styles = StyleSheet.create({
 
   saveBtn: { backgroundColor: Colors.brand.primary, borderRadius: 28, paddingVertical: 16, alignItems: 'center', shadowColor: Colors.brand.primary, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 10, elevation: 6 },
   saveBtnText: { color: '#fff', fontSize: 16, fontWeight: '800' },
+
+  timeOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' },
+  timeModal: { backgroundColor: Colors.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 40 },
+  timeDoneBtn: { backgroundColor: Colors.brand.primary, borderRadius: 20, paddingVertical: 14, alignItems: 'center', marginTop: 12 },
+  timeDoneBtnText: { color: '#fff', fontWeight: '700', fontSize: 16 },
 });
