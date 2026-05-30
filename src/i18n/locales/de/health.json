@@ -1,0 +1,77 @@
+{
+  "title": "Gesundheit",
+  "vaccine": {
+    "title": "Impfungen",
+    "add": "Impfung hinzufügen",
+    "edit": "Impfung bearbeiten",
+    "fields": {
+      "name": "Impfstoffname",
+      "name_placeholder": "z.B. Tollwut",
+      "date_given": "Datum der Impfung",
+      "next_due": "Nächster Termin",
+      "vet_name": "Tierarzt",
+      "batch_number": "Chargennummer",
+      "notes": "Notizen",
+      "reminder": "Erinnerung aktivieren"
+    },
+    "status": {
+      "up_to_date": "Aktuell",
+      "due_soon": "Bald fällig",
+      "overdue": "Überfällig"
+    }
+  },
+  "medication": {
+    "title": "Medikamente",
+    "add": "Medikament hinzufügen",
+    "edit": "Medikament bearbeiten",
+    "fields": {
+      "name": "Medikamentname",
+      "dosage": "Dosierung",
+      "dosage_placeholder": "z.B. 10mg",
+      "frequency": "Häufigkeit",
+      "start_date": "Startdatum",
+      "end_date": "Enddatum",
+      "times_per_day": "Mal pro Tag",
+      "notes": "Notizen",
+      "active": "Aktiv"
+    },
+    "frequency": {
+      "daily": "Täglich",
+      "weekly": "Wöchentlich",
+      "monthly": "Monatlich",
+      "as_needed": "Bei Bedarf"
+    },
+    "ongoing": "Dauerhaft"
+  },
+  "weight": {
+    "title": "Gewicht",
+    "add": "Gewicht hinzufügen",
+    "fields": {
+      "weight_kg": "Gewicht (kg)",
+      "date": "Datum",
+      "notes": "Notizen"
+    },
+    "chart_title": "Gewichtsverlauf",
+    "current": "Aktuelles Gewicht",
+    "trend_up": "↑ {{diff}} kg seit letzter Messung",
+    "trend_down": "↓ {{diff}} kg seit letzter Messung",
+    "trend_same": "Keine Änderung"
+  },
+  "visit": {
+    "title": "Tierarztbesuche",
+    "add": "Besuch hinzufügen",
+    "edit": "Besuch bearbeiten",
+    "fields": {
+      "date": "Besuchsdatum",
+      "reason": "Grund",
+      "vet_name": "Tierarzt",
+      "clinic": "Klinik",
+      "diagnosis": "Diagnose",
+      "treatment": "Behandlung",
+      "cost": "Kosten",
+      "currency": "Währung",
+      "follow_up": "Folgetermin",
+      "notes": "Notizen"
+    }
+  }
+}

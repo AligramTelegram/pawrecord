@@ -1,0 +1,18 @@
+{
+  "trial_title": "Prueba Premium gratis 7 días",
+  "trial_subtitle": "Luego $3.99 / mes. Cancela cuando quieras.",
+  "features": { "unlimited_pets": "Mascotas ilimitadas", "pdf_report": "Informes PDF veterinarios", "icloud_backup": "Copia de seguridad iCloud", "unlimited_records": "Registros de salud ilimitados", "photo_gallery": "Galería de fotos", "appointments": "Calendario de citas" },
+  "plans": { "monthly": { "label": "Mensual", "price": "$3.99", "period": "por mes", "trial": "7 días de prueba gratuita" }, "annual": { "label": "Anual", "price": "$24.99", "period": "por año", "save_badge": "Ahorra 48%", "trial": "14 días de prueba gratuita", "monthly_equivalent": "Solo $2.08/mes" } },
+  "cta_trial": "Iniciar prueba gratuita", "cta_subscribe": "Continuar",
+  "restore": "Restaurar compras",
+  "legal": "Cancela cuando quieras en Ajustes > Suscripciones. La suscripción se renueva automáticamente a menos que se cancele 24 horas antes del fin del período de prueba.",
+  "links": { "privacy": "Política de privacidad", "terms": "Términos de uso" },
+  "free_tier_prompt": "Continuar con plan gratuito",
+  "social_proof": "Con la confianza de más de {{count}} dueños de mascotas",
+  "premium_badge": "Premium",
+  "restore_success": "¡Premium restaurado! Bienvenido de vuelta.",
+  "restore_not_found": "No se encontró ninguna suscripción activa.",
+  "purchase_error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+  "purchase_limit_title": "Actualizar a Premium",
+  "purchase_limit_body": "El plan gratuito permite 1 mascota. Actualiza para agregar mascotas ilimitadas."
+}

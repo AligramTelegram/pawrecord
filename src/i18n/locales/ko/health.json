@@ -1,0 +1,7 @@
+{
+  "title": "건강",
+  "vaccine": { "title": "백신", "add": "백신 추가", "edit": "백신 편집", "fields": { "name": "백신명", "name_placeholder": "예: 광견병", "date_given": "접종일", "next_due": "다음 접종일", "vet_name": "수의사", "batch_number": "배치 번호", "notes": "메모", "reminder": "알림 활성화" }, "status": { "up_to_date": "최신", "due_soon": "곧 예정", "overdue": "기한 초과" } },
+  "medication": { "title": "약", "add": "약 추가", "edit": "약 편집", "fields": { "name": "약명", "dosage": "용량", "dosage_placeholder": "예: 10mg", "frequency": "빈도", "start_date": "시작일", "end_date": "종료일", "times_per_day": "하루 횟수", "notes": "메모", "active": "활성" }, "frequency": { "daily": "매일", "weekly": "매주", "monthly": "매월", "as_needed": "필요시" }, "ongoing": "지속 중" },
+  "weight": { "title": "체중", "add": "체중 추가", "fields": { "weight_kg": "체중 (kg)", "date": "날짜", "notes": "메모" }, "chart_title": "체중 기록", "current": "현재 체중", "trend_up": "↑ 지난번보다 {{diff}}kg 증가", "trend_down": "↓ 지난번보다 {{diff}}kg 감소", "trend_same": "변화 없음" },
+  "visit": { "title": "동물병원 방문", "add": "방문 추가", "edit": "방문 편집", "fields": { "date": "방문일", "reason": "방문 이유", "vet_name": "수의사", "clinic": "병원", "diagnosis": "진단", "treatment": "치료", "cost": "비용", "currency": "통화", "follow_up": "다음 방문일", "notes": "메모" } }
+}

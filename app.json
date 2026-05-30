@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "PawRecord",
+    "slug": "pawrecord",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pawrecord",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pawrecord.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "PawRecord needs access to your photos to add pet photos.",
+        "NSCameraUsageDescription": "PawRecord needs camera access to take pet photos.",
+        "NSUserNotificationUsageDescription": "PawRecord sends reminders for vaccinations and medications."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F5F0",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "package": "com.pawrecord.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F5F0"
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#C94F2C"
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

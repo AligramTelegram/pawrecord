@@ -1,0 +1,12 @@
+{
+  "title": "我的宠物", "add_pet": "添加宠物", "edit_pet": "编辑宠物", "pet_profile": "档案",
+  "fields": { "name": "名字", "name_placeholder": "例如：小白", "species": "种类", "breed": "品种", "breed_placeholder": "例如：金毛猎犬", "date_of_birth": "出生日期", "gender": "性别", "color": "毛色/特征", "microchip": "芯片ID", "photo": "照片" },
+  "species": { "dog": "狗", "cat": "猫", "rabbit": "兔子", "bird": "鸟", "other": "其他" },
+  "gender": { "male": "雄性", "female": "雌性", "unknown": "未知" },
+  "age": { "years": "{{count}}岁", "years_one": "{{count}}岁", "months": "{{count}}个月", "months_one": "{{count}}个月", "days": "{{count}}天", "days_one": "{{count}}天" },
+  "delete_confirm": "删除{{name}}？", "delete_confirm_sub": "{{name}}的所有健康记录将被永久删除。",
+  "sections": { "vaccines": "疫苗", "medications": "药物", "weight": "体重", "visits": "就诊记录" },
+  "empty_title": "添加您的第一只宠物",
+  "empty_subtitle": "疫苗接种、药物和兽医就诊记录——一处尽在掌握。",
+  "empty_cta": "添加宠物"
+}

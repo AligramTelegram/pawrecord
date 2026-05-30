@@ -1,0 +1,18 @@
+{
+  "trial_title": "Prova Premium gratis per 7 giorni",
+  "trial_subtitle": "Poi €3,99 / mese. Disdici quando vuoi.",
+  "features": { "unlimited_pets": "Animali illimitati", "pdf_report": "Report PDF veterinari", "icloud_backup": "Backup iCloud", "unlimited_records": "Cartelle sanitarie illimitate", "photo_gallery": "Galleria foto", "appointments": "Calendario appuntamenti" },
+  "plans": { "monthly": { "label": "Mensile", "price": "€3,99", "period": "al mese", "trial": "7 giorni gratuiti" }, "annual": { "label": "Annuale", "price": "€24,99", "period": "all'anno", "save_badge": "Risparmia 48%", "trial": "14 giorni gratuiti", "monthly_equivalent": "Solo €2,08/mese" } },
+  "cta_trial": "Inizia la prova gratuita", "cta_subscribe": "Continua",
+  "restore": "Ripristina acquisti",
+  "legal": "Disdici quando vuoi in Impostazioni > Abbonamenti. L'abbonamento si rinnova automaticamente se non annullato 24 ore prima della scadenza del periodo di prova.",
+  "links": { "privacy": "Informativa sulla privacy", "terms": "Termini di utilizzo" },
+  "free_tier_prompt": "Continua con il piano gratuito",
+  "social_proof": "Scelto da oltre {{count}} proprietari di animali",
+  "premium_badge": "Premium",
+  "restore_success": "Premium ripristinato! Bentornato.",
+  "restore_not_found": "Nessun abbonamento attivo trovato.",
+  "purchase_error": "Qualcosa è andato storto. Riprova.",
+  "purchase_limit_title": "Passa a Premium",
+  "purchase_limit_body": "Il piano gratuito consente 1 animale. Passa a Premium per aggiungere animali illimitati."
+}

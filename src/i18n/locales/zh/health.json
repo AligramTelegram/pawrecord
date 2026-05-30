@@ -1,0 +1,7 @@
+{
+  "title": "健康",
+  "vaccine": { "title": "疫苗", "add": "添加疫苗", "edit": "编辑疫苗", "fields": { "name": "疫苗名称", "name_placeholder": "例如：狂犬病疫苗", "date_given": "接种日期", "next_due": "下次接种日期", "vet_name": "兽医", "batch_number": "批次号", "notes": "备注", "reminder": "启用提醒" }, "status": { "up_to_date": "已是最新", "due_soon": "即将到期", "overdue": "已过期" } },
+  "medication": { "title": "药物", "add": "添加药物", "edit": "编辑药物", "fields": { "name": "药物名称", "dosage": "剂量", "dosage_placeholder": "例如：10mg", "frequency": "频率", "start_date": "开始日期", "end_date": "结束日期", "times_per_day": "每日次数", "notes": "备注", "active": "有效" }, "frequency": { "daily": "每天", "weekly": "每周", "monthly": "每月", "as_needed": "按需" }, "ongoing": "持续中" },
+  "weight": { "title": "体重", "add": "添加体重", "fields": { "weight_kg": "体重（kg）", "date": "日期", "notes": "备注" }, "chart_title": "体重记录", "current": "当前体重", "trend_up": "↑ 较上次增加{{diff}}kg", "trend_down": "↓ 较上次减少{{diff}}kg", "trend_same": "无变化" },
+  "visit": { "title": "就诊记录", "add": "添加就诊", "edit": "编辑就诊", "fields": { "date": "就诊日期", "reason": "原因", "vet_name": "兽医", "clinic": "诊所", "diagnosis": "诊断", "treatment": "治疗", "cost": "费用", "currency": "货币", "follow_up": "复诊日期", "notes": "备注" } }
+}

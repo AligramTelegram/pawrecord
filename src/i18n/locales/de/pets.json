@@ -1,0 +1,49 @@
+{
+  "title": "Meine Tiere",
+  "add_pet": "Tier hinzufügen",
+  "edit_pet": "Tier bearbeiten",
+  "pet_profile": "Tierprofil",
+  "fields": {
+    "name": "Name",
+    "name_placeholder": "z.B. Max",
+    "species": "Tierart",
+    "breed": "Rasse",
+    "breed_placeholder": "z.B. Golden Retriever",
+    "date_of_birth": "Geburtsdatum",
+    "gender": "Geschlecht",
+    "color": "Farbe / Merkmale",
+    "microchip": "Microchip-ID",
+    "photo": "Foto"
+  },
+  "species": {
+    "dog": "Hund",
+    "cat": "Katze",
+    "rabbit": "Kaninchen",
+    "bird": "Vogel",
+    "other": "Sonstiges"
+  },
+  "gender": {
+    "male": "Männlich",
+    "female": "Weiblich",
+    "unknown": "Unbekannt"
+  },
+  "age": {
+    "years": "{{count}} Jahre",
+    "years_one": "{{count}} Jahr",
+    "months": "{{count}} Monate",
+    "months_one": "{{count}} Monat",
+    "days": "{{count}} Tage",
+    "days_one": "{{count}} Tag"
+  },
+  "delete_confirm": "{{name}} löschen?",
+  "delete_confirm_sub": "Alle Gesundheitsdaten von {{name}} werden dauerhaft gelöscht.",
+  "sections": {
+    "vaccines": "Impfungen",
+    "medications": "Medikamente",
+    "weight": "Gewicht",
+    "visits": "Tierarztbesuche"
+  },
+  "empty_title": "Erstes Haustier hinzufügen",
+  "empty_subtitle": "Impfungen, Medikamente und Tierarztbesuche — alles an einem Ort.",
+  "empty_cta": "Haustier hinzufügen"
+}

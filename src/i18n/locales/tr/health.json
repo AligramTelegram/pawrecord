@@ -1,0 +1,7 @@
+{
+  "title": "Sağlık",
+  "vaccine": { "title": "Aşılar", "add": "Aşı Ekle", "edit": "Aşıyı Düzenle", "fields": { "name": "Aşı Adı", "name_placeholder": "örn. Kuduz", "date_given": "Yapıldığı Tarih", "next_due": "Sonraki Tarih", "vet_name": "Veteriner", "batch_number": "Parti Numarası", "notes": "Notlar", "reminder": "Hatırlatıcı Aktif" }, "status": { "up_to_date": "Güncel", "due_soon": "Yakında", "overdue": "Gecikmiş" } },
+  "medication": { "title": "İlaçlar", "add": "İlaç Ekle", "edit": "İlacı Düzenle", "fields": { "name": "İlaç Adı", "dosage": "Doz", "dosage_placeholder": "örn. 10mg", "frequency": "Sıklık", "start_date": "Başlangıç Tarihi", "end_date": "Bitiş Tarihi", "times_per_day": "Günlük Kez", "notes": "Notlar", "active": "Aktif" }, "frequency": { "daily": "Günlük", "weekly": "Haftalık", "monthly": "Aylık", "as_needed": "Gerektiğinde" }, "ongoing": "Süregelen" },
+  "weight": { "title": "Ağırlık", "add": "Ağırlık Ekle", "fields": { "weight_kg": "Ağırlık (kg)", "date": "Tarih", "notes": "Notlar" }, "chart_title": "Ağırlık Geçmişi", "current": "Güncel Ağırlık", "trend_up": "↑ Son ölçümden {{diff}} kg fazla", "trend_down": "↓ Son ölçümden {{diff}} kg az", "trend_same": "Değişim yok" },
+  "visit": { "title": "Veteriner Ziyaretleri", "add": "Ziyaret Ekle", "edit": "Ziyareti Düzenle", "fields": { "date": "Ziyaret Tarihi", "reason": "Sebep", "vet_name": "Veteriner", "clinic": "Klinik", "diagnosis": "Tanı", "treatment": "Tedavi", "cost": "Ücret", "currency": "Para Birimi", "follow_up": "Kontrol Tarihi", "notes": "Notlar" } }
+}

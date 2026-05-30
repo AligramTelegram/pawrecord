@@ -1,0 +1,44 @@
+{
+  "trial_title": "Try Premium Free for 7 Days",
+  "trial_subtitle": "Then $3.99 / month. Cancel anytime.",
+  "features": {
+    "unlimited_pets": "Unlimited pets",
+    "pdf_report": "PDF vet reports",
+    "icloud_backup": "iCloud backup",
+    "unlimited_records": "Unlimited health records",
+    "photo_gallery": "Photo gallery",
+    "appointments": "Appointment calendar"
+  },
+  "plans": {
+    "monthly": {
+      "label": "Monthly",
+      "price": "$3.99",
+      "period": "per month",
+      "trial": "7-day free trial"
+    },
+    "annual": {
+      "label": "Annual",
+      "price": "$24.99",
+      "period": "per year",
+      "save_badge": "Save 48%",
+      "trial": "14-day free trial",
+      "monthly_equivalent": "Just $2.08/month"
+    }
+  },
+  "cta_trial": "Start Free Trial",
+  "cta_subscribe": "Continue",
+  "restore": "Restore Purchases",
+  "legal": "Cancel anytime in Settings > Subscriptions. Subscription auto-renews unless cancelled 24 hours before the end of the trial period.",
+  "links": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "free_tier_prompt": "Continue with Free Plan",
+  "social_proof": "Trusted by {{count}}+ pet parents worldwide",
+  "premium_badge": "Premium",
+  "restore_success": "Premium restored! Welcome back.",
+  "restore_not_found": "No active subscription found.",
+  "purchase_error": "Something went wrong. Please try again.",
+  "purchase_limit_title": "Upgrade to Premium",
+  "purchase_limit_body": "Free plan allows 1 pet. Upgrade to add unlimited pets."
+}

@@ -1,0 +1,44 @@
+{
+  "trial_title": "7 Tage kostenlos testen",
+  "trial_subtitle": "Dann 3,99 € / Monat. Jederzeit kündbar.",
+  "features": {
+    "unlimited_pets": "Unbegrenzte Haustiere",
+    "pdf_report": "PDF-Tierarztberichte",
+    "icloud_backup": "iCloud-Backup",
+    "unlimited_records": "Unbegrenzte Gesundheitseinträge",
+    "photo_gallery": "Fotogalerie",
+    "appointments": "Terminkalender"
+  },
+  "plans": {
+    "monthly": {
+      "label": "Monatlich",
+      "price": "3,99 €",
+      "period": "pro Monat",
+      "trial": "7 Tage kostenlos"
+    },
+    "annual": {
+      "label": "Jährlich",
+      "price": "24,99 €",
+      "period": "pro Jahr",
+      "save_badge": "48% sparen",
+      "trial": "14 Tage kostenlos",
+      "monthly_equivalent": "Nur 2,08 €/Monat"
+    }
+  },
+  "cta_trial": "Kostenlos starten",
+  "cta_subscribe": "Weiter",
+  "restore": "Käufe wiederherstellen",
+  "legal": "Jederzeit in Einstellungen > Abonnements kündbar. Abonnement verlängert sich automatisch, sofern nicht 24 Stunden vor Ablauf des Testzeitraums gekündigt.",
+  "links": {
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "free_tier_prompt": "Mit kostenlosem Plan fortfahren",
+  "social_proof": "Von {{count}}+ Tierbesitzern weltweit vertraut",
+  "premium_badge": "Premium",
+  "restore_success": "Premium wiederhergestellt! Willkommen zurück.",
+  "restore_not_found": "Kein aktives Abonnement gefunden.",
+  "purchase_error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+  "purchase_limit_title": "Upgrade auf Premium",
+  "purchase_limit_body": "Der kostenlose Plan erlaubt 1 Haustier. Upgrade für unbegrenzte Haustiere."
+}

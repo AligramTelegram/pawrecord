@@ -1,0 +1,12 @@
+{
+  "title": "Hayvanlarım", "add_pet": "Hayvan Ekle", "edit_pet": "Hayvanı Düzenle", "pet_profile": "Profil",
+  "fields": { "name": "Ad", "name_placeholder": "örn. Karamel", "species": "Tür", "breed": "Cins", "breed_placeholder": "örn. Golden Retriever", "date_of_birth": "Doğum Tarihi", "gender": "Cinsiyet", "color": "Renk / Özellikleri", "microchip": "Mikroçip ID", "photo": "Fotoğraf" },
+  "species": { "dog": "Köpek", "cat": "Kedi", "rabbit": "Tavşan", "bird": "Kuş", "other": "Diğer" },
+  "gender": { "male": "Erkek", "female": "Dişi", "unknown": "Bilinmiyor" },
+  "age": { "years": "{{count}} yaş", "years_one": "{{count}} yaş", "months": "{{count}} ay", "months_one": "{{count}} ay", "days": "{{count}} gün", "days_one": "{{count}} gün" },
+  "delete_confirm": "{{name}} silinsin mi?", "delete_confirm_sub": "{{name}}'in tüm sağlık kayıtları kalıcı olarak silinecek.",
+  "sections": { "vaccines": "Aşılar", "medications": "İlaçlar", "weight": "Ağırlık", "visits": "Veteriner Ziyaretleri" },
+  "empty_title": "İlk evcil hayvanınızı ekleyin",
+  "empty_subtitle": "Aşı, ilaç ve veteriner ziyaretlerini tek yerden takip edin.",
+  "empty_cta": "Evcil Hayvan Ekle"
+}

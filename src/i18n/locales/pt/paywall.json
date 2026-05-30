@@ -1,0 +1,18 @@
+{
+  "trial_title": "Experimente o Premium grátis por 7 dias",
+  "trial_subtitle": "Depois R$3,99 / mês. Cancele quando quiser.",
+  "features": { "unlimited_pets": "Animais ilimitados", "pdf_report": "Relatórios PDF veterinários", "icloud_backup": "Backup iCloud", "unlimited_records": "Registros de saúde ilimitados", "photo_gallery": "Galeria de fotos", "appointments": "Calendário de consultas" },
+  "plans": { "monthly": { "label": "Mensal", "price": "R$3,99", "period": "por mês", "trial": "7 dias gratuitos" }, "annual": { "label": "Anual", "price": "R$24,99", "period": "por ano", "save_badge": "Economize 48%", "trial": "14 dias gratuitos", "monthly_equivalent": "Apenas R$2,08/mês" } },
+  "cta_trial": "Iniciar teste gratuito", "cta_subscribe": "Continuar",
+  "restore": "Restaurar compras",
+  "legal": "Cancele quando quiser em Configurações > Assinaturas. A assinatura é renovada automaticamente a menos que seja cancelada 24 horas antes do fim do período de teste.",
+  "links": { "privacy": "Política de privacidade", "terms": "Termos de uso" },
+  "free_tier_prompt": "Continuar com plano gratuito",
+  "social_proof": "Confiado por mais de {{count}} tutores de animais",
+  "premium_badge": "Premium",
+  "restore_success": "Premium restaurado! Bem-vindo de volta.",
+  "restore_not_found": "Nenhuma assinatura ativa encontrada.",
+  "purchase_error": "Algo deu errado. Por favor, tente novamente.",
+  "purchase_limit_title": "Upgrade para Premium",
+  "purchase_limit_body": "O plano gratuito permite 1 animal. Faça upgrade para adicionar animais ilimitados."
+}

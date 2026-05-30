@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "ペットの健康を、きちんと管理",
+  "nav": { "pets": "マイペット", "health": "健康", "calendar": "カレンダー", "settings": "設定" },
+  "actions": { "add": "追加", "save": "保存", "cancel": "キャンセル", "delete": "削除", "edit": "編集", "share": "共有", "export_pdf": "PDFエクスポート", "back": "戻る", "done": "完了", "confirm": "確認", "close": "閉じる" },
+  "time": { "today": "今日", "tomorrow": "明日", "days_ago": "{{count}}日前", "days_ago_one": "{{count}}日前", "overdue": "期限切れ", "due_soon": "もうすぐ期限", "upcoming": "近日中", "never": "なし" },
+  "empty": { "no_pets": "ペットがいません", "no_pets_sub": "最初のペットを追加しましょう", "no_records": "記録がありません", "no_records_sub": "健康管理を始めましょう" },
+  "errors": { "generic": "エラーが発生しました。再試行してください。", "required": "この項目は必須です", "invalid_date": "有効な日付を入力してください" },
+  "home": { "greeting": "こんにちは 👋", "your_pets": "マイペット", "pet_count_one": "{{count}}匹", "pet_count_other": "{{count}}匹", "overdue_alert_one": "{{count}}件のワクチンが期限切れです！", "overdue_alert_other": "{{count}}件のワクチンが期限切れです！", "due_soon_alert_one": "{{count}}件のワクチンがもうすぐ期限です", "due_soon_alert_other": "{{count}}件のワクチンがもうすぐ期限です", "view_calendar": "タップしてカレンダーを表示 →" },
+  "health_screen": { "quick_add": "クイック追加", "upcoming_vaccines": "予定ワクチン", "all_good": "すべてのワクチンが最新です！", "vaccine": "ワクチン", "medication": "薬", "weight": "体重", "vet_visit": "動物病院の受診" },
+  "calendar_screen": { "next_90": "今後90日間", "no_events": "予定イベントはありません", "no_events_sub": "ワクチンや受診のリマインダーがここに表示されます" },
+  "settings_screen": { "title": "設定", "notifications": "通知", "vaccine_reminders": "ワクチンリマインダー", "reminder_sub": "期限の7日前", "weight_unit": "体重単位", "unit": "単位", "language": "言語", "about": "アプリについて", "rate_app": "PawRecordを評価する", "privacy_policy": "プライバシーポリシー", "terms": "利用規約", "data": "データ", "delete_data": "すべてのデータを削除", "delete_data_title": "⚠️ すべてのデータを削除", "delete_data_msg": "すべてのペット、健康記録、設定が完全に削除されます。この操作は元に戻せません。", "delete_data_confirm": "すべて削除" },
+  "pet_detail": { "export_pdf": "PDFエクスポート", "delete": "削除", "no_vaccines": "ワクチン記録がありません", "no_medications": "投薬記録がありません", "no_weight": "体重記録がありません", "no_visits": "受診記録がありません", "vaccines_stat": "ワクチン", "meds_stat": "薬", "visits_stat": "受診", "delete_title": "{{name}}を削除しますか？", "delete_msg": "すべての健康記録が完全に削除されます。" },
+  "forms": { "choose_species": "種類を選択してください", "add_pet": "🐾  ペットを追加", "save_vaccine": "ワクチンを保存", "save_medication": "薬を保存", "save_weight": "体重を保存", "save_visit": "受診を保存", "pet_name": "ペットの名前", "pet_name_placeholder": "例：バディ、ルナ...", "species": "種類", "gender": "性別", "breed_optional": "品種（任意）", "dob_optional": "誕生日（任意）", "color_optional": "色（任意）", "color_placeholder": "例：ゴールデン、白黒", "microchip_optional": "マイクロチップID（任意）", "vaccine_name": "ワクチン名", "vaccine_placeholder": "例：狂犬病、混合ワクチン...", "date_given": "接種日", "next_due_optional": "次回接種予定日（任意）", "vet_optional": "獣医師（任意）", "vet_placeholder": "田中先生", "batch_optional": "ロット番号（任意）", "batch_placeholder": "ロット番号 / シリアル番号", "notes_optional": "メモ（任意）", "notes_placeholder": "追加メモ...", "med_name": "薬品名", "med_placeholder": "例：アモキシシリン、フロントライン...", "dosage": "用量", "dosage_placeholder": "例：50mg、1錠", "frequency": "頻度", "freq_daily": "🌅 毎日", "freq_weekly": "📆 毎週", "freq_monthly": "🗓 毎月", "freq_as_needed": "⚡ 必要時", "start_date": "開始日", "end_date_optional": "終了日（任意）", "end_date_hint": "継続中の場合は空白のままにしてください", "weight_kg": "体重（kg）", "weight_placeholder": "例：12.5", "visit_date": "受診日", "visit_reason": "受診理由", "visit_reason_placeholder": "例：年次健診、病気...", "clinic_optional": "動物病院（任意）", "diagnosis_optional": "診断（任意）", "diagnosis_placeholder": "獣医師の診断...", "treatment_optional": "治療（任意）", "treatment_placeholder": "処方された治療...", "cost_optional": "費用（任意）", "add_vaccine_title": "ワクチンを追加", "add_vaccine_sub": "ペットの予防接種を記録する", "add_med_title": "薬を追加", "add_med_sub": "ペットの薬を管理する", "log_weight_title": "体重を記録", "log_weight_sub": "ペットの体重変化を追跡する", "add_visit_title": "動物病院の受診", "add_visit_sub": "動物病院の診察を記録する", "error_save": "保存できませんでした。再試行してください。" },
+  "gender": { "male": "♂ オス", "female": "♀ メス", "unknown": "? 不明" },
+  "reminders": {
+    "title": "リマインダー",
+    "add": "+ 追加",
+    "new": "新しいリマインダー",
+    "type": "種類",
+    "time": "時刻",
+    "days": "曜日",
+    "every_day": "毎日",
+    "save": "リマインダーを保存",
+    "no_reminders": "リマインダーはありません",
+    "no_reminders_sub": "食事、水、薬のリマインダーを追加しましょう",
+    "delete_title": "リマインダーを削除",
+    "delete_msg": "「{{label}}」を削除しますか？",
+    "food": "食事",
+    "water": "水",
+    "medication": "薬",
+    "custom": "カスタム",
+    "days_short": ["月","火","水","木","金","土","日"],
+    "permission_title": "通知が無効です",
+    "permission_body": "リマインダーを受け取るには、設定で通知を有効にしてください。",
+    "permission_settings": "設定を開く"
+  },
+  "pet_detail_labels": {
+    "given": "投与済み",
+    "next_due": "次回予定",
+    "started": "開始",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "ペットの健康情報を\nすべて一か所に",
+        "sub": "ワクチン、薬、体重記録、動物病院の受診履歴をすっきり管理。",
+        "features": ["💉 ワクチン管理", "💊 投薬管理", "⚖️ 体重記録"]
+      },
+      {
+        "title": "ワクチンの\n打ち忘れをゼロに",
+        "sub": "スマートなリマインダーが、各ワクチンの7日前にお知らせします。",
+        "features": ["📅 期限アラート", "📱 プッシュ通知", "✅ ステータス管理"]
+      },
+      {
+        "title": "獣医師へ\n即座に共有",
+        "sub": "ワンタップでプロ仕様のPDF健康レポートをエクスポート。",
+        "features": ["📊 完全な健康レポート", "🏥 獣医師対応フォーマット", "☁️ iCloudバックアップ"]
+      }
+    ],
+    "skip": "スキップ",
+    "next": "次へ →",
+    "get_started": "🚀  始める",
+    "free_plan": "無料プランで続ける"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 {{name}}のごはんの時間！",
+        "{{name}}がおなかを空かせています！ 🐾",
+        "{{name}}のごはんを忘れずに 🍗",
+        "{{name}}は食事が待ちきれない！ 🦴"
+      ],
+      "bodies": [
+        "あなたの子が食事を待っています 🥣",
+        "お皿いっぱいから幸せなペットが始まる！ 🐾",
+        "ペットへの愛情 — 時間通りにごはんをあげよう ❤️",
+        "{{name}}がごはんを楽しみにしっぽを振っています 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 {{name}}に新鮮なお水を！",
+        "{{name}}が水分補給を必要としています 💦",
+        "{{name}}のお水の時間 🚰",
+        "{{name}}を水分補給させよう！ 💧"
+      ],
+      "bodies": [
+        "水入れを補充するのを忘れずに 🥤",
+        "新鮮なお水でペットを健康に 💙",
+        "一口の水、愛情いっぱい 💧",
+        "{{name}}の水入れを補充してあげて ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 {{name}}のお薬の時間",
+        "{{name}}のお薬の時期です 🏥",
+        "健康第一 — {{name}}のお薬！ 💊",
+        "{{name}}のお薬を忘れずに 🩺"
+      ],
+      "bodies": [
+        "定期的なケアが{{name}}を健康に保ちます 💪",
+        "少しのお薬で大きな違い ❤️",
+        "{{name}}の健康はあなたにかかっています 🐾",
+        "{{name}}にお薬をあげる時間です 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}のワクチン接種が近づいています！",
+      "body": "{{vaccine}}は7日後に期限です。動物病院の予約を入れましょう 📅"
+    },
+    "custom": {
+      "title": "⏰ {{name}}へのリマインダー",
+      "body": "{{label}} — 忘れずに！ 🐾"
+    }
+  }
+}

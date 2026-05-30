@@ -1,0 +1,16 @@
+{
+  "title": "Mes animaux",
+  "add_pet": "Ajouter un animal",
+  "edit_pet": "Modifier l'animal",
+  "pet_profile": "Profil",
+  "fields": { "name": "Nom", "name_placeholder": "ex. Max", "species": "Espèce", "breed": "Race", "breed_placeholder": "ex. Golden Retriever", "date_of_birth": "Date de naissance", "gender": "Sexe", "color": "Couleur / Marques", "microchip": "ID micropuce", "photo": "Photo" },
+  "species": { "dog": "Chien", "cat": "Chat", "rabbit": "Lapin", "bird": "Oiseau", "other": "Autre" },
+  "gender": { "male": "Mâle", "female": "Femelle", "unknown": "Inconnu" },
+  "age": { "years": "{{count}} ans", "years_one": "{{count}} an", "months": "{{count}} mois", "months_one": "{{count}} mois", "days": "{{count}} jours", "days_one": "{{count}} jour" },
+  "delete_confirm": "Supprimer {{name}} ?",
+  "delete_confirm_sub": "Tous les enregistrements de santé de {{name}} seront supprimés.",
+  "sections": { "vaccines": "Vaccins", "medications": "Médicaments", "weight": "Poids", "visits": "Visites vétérinaires" },
+  "empty_title": "Ajoutez votre premier animal",
+  "empty_subtitle": "Vaccins, médicaments et visites vétérinaires — tout en un seul endroit.",
+  "empty_cta": "Ajouter un animal"
+}

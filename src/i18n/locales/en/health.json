@@ -1,0 +1,77 @@
+{
+  "title": "Health",
+  "vaccine": {
+    "title": "Vaccines",
+    "add": "Add Vaccine",
+    "edit": "Edit Vaccine",
+    "fields": {
+      "name": "Vaccine Name",
+      "name_placeholder": "e.g. Rabies",
+      "date_given": "Date Given",
+      "next_due": "Next Due Date",
+      "vet_name": "Veterinarian",
+      "batch_number": "Batch Number",
+      "notes": "Notes",
+      "reminder": "Enable Reminder"
+    },
+    "status": {
+      "up_to_date": "Up to date",
+      "due_soon": "Due soon",
+      "overdue": "Overdue"
+    }
+  },
+  "medication": {
+    "title": "Medications",
+    "add": "Add Medication",
+    "edit": "Edit Medication",
+    "fields": {
+      "name": "Medication Name",
+      "dosage": "Dosage",
+      "dosage_placeholder": "e.g. 10mg",
+      "frequency": "Frequency",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "times_per_day": "Times Per Day",
+      "notes": "Notes",
+      "active": "Active"
+    },
+    "frequency": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "as_needed": "As Needed"
+    },
+    "ongoing": "Ongoing"
+  },
+  "weight": {
+    "title": "Weight",
+    "add": "Add Weight",
+    "fields": {
+      "weight_kg": "Weight (kg)",
+      "date": "Date",
+      "notes": "Notes"
+    },
+    "chart_title": "Weight History",
+    "current": "Current Weight",
+    "trend_up": "↑ {{diff}} kg since last",
+    "trend_down": "↓ {{diff}} kg since last",
+    "trend_same": "No change"
+  },
+  "visit": {
+    "title": "Vet Visits",
+    "add": "Add Visit",
+    "edit": "Edit Visit",
+    "fields": {
+      "date": "Visit Date",
+      "reason": "Reason",
+      "vet_name": "Veterinarian",
+      "clinic": "Clinic",
+      "diagnosis": "Diagnosis",
+      "treatment": "Treatment",
+      "cost": "Cost",
+      "currency": "Currency",
+      "follow_up": "Follow-up Date",
+      "notes": "Notes"
+    }
+  }
+}

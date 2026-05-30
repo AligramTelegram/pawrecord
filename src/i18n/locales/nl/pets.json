@@ -1,0 +1,12 @@
+{
+  "title": "Mijn dieren", "add_pet": "Dier toevoegen", "edit_pet": "Dier bewerken", "pet_profile": "Profiel",
+  "fields": { "name": "Naam", "name_placeholder": "bv. Max", "species": "Diersoort", "breed": "Ras", "breed_placeholder": "bv. Golden Retriever", "date_of_birth": "Geboortedatum", "gender": "Geslacht", "color": "Kleur / Kenmerken", "microchip": "Microchip-ID", "photo": "Foto" },
+  "species": { "dog": "Hond", "cat": "Kat", "rabbit": "Konijn", "bird": "Vogel", "other": "Anders" },
+  "gender": { "male": "Mannelijk", "female": "Vrouwelijk", "unknown": "Onbekend" },
+  "age": { "years": "{{count}} jaar", "years_one": "{{count}} jaar", "months": "{{count}} maanden", "months_one": "{{count}} maand", "days": "{{count}} dagen", "days_one": "{{count}} dag" },
+  "delete_confirm": "{{name}} verwijderen?", "delete_confirm_sub": "Alle gezondheidsrecords van {{name}} worden verwijderd.",
+  "sections": { "vaccines": "Vaccinaties", "medications": "Medicijnen", "weight": "Gewicht", "visits": "Dierenarts" },
+  "empty_title": "Voeg uw eerste huisdier toe",
+  "empty_subtitle": "Vaccinaties, medicijnen en dierenartsenbezoeken — alles op één plek.",
+  "empty_cta": "Huisdier toevoegen"
+}

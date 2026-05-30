@@ -1,0 +1,12 @@
+{
+  "title": "Mis mascotas", "add_pet": "Añadir mascota", "edit_pet": "Editar mascota", "pet_profile": "Perfil",
+  "fields": { "name": "Nombre", "name_placeholder": "ej. Max", "species": "Especie", "breed": "Raza", "breed_placeholder": "ej. Golden Retriever", "date_of_birth": "Fecha de nacimiento", "gender": "Género", "color": "Color / Marcas", "microchip": "ID microchip", "photo": "Foto" },
+  "species": { "dog": "Perro", "cat": "Gato", "rabbit": "Conejo", "bird": "Pájaro", "other": "Otro" },
+  "gender": { "male": "Macho", "female": "Hembra", "unknown": "Desconocido" },
+  "age": { "years": "{{count}} años", "years_one": "{{count}} año", "months": "{{count}} meses", "months_one": "{{count}} mes", "days": "{{count}} días", "days_one": "{{count}} día" },
+  "delete_confirm": "¿Eliminar a {{name}}?", "delete_confirm_sub": "Se eliminarán todos los registros de salud de {{name}}.",
+  "sections": { "vaccines": "Vacunas", "medications": "Medicamentos", "weight": "Peso", "visits": "Visitas veterinarias" },
+  "empty_title": "Agrega tu primera mascota",
+  "empty_subtitle": "Vacunas, medicamentos y visitas al veterinario — todo en un solo lugar.",
+  "empty_cta": "Agregar mascota"
+}

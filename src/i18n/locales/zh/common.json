@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "宠物健康，有条不紊",
+  "nav": { "pets": "我的宠物", "health": "健康", "calendar": "日历", "settings": "设置" },
+  "actions": { "add": "添加", "save": "保存", "cancel": "取消", "delete": "删除", "edit": "编辑", "share": "分享", "export_pdf": "导出PDF", "back": "返回", "done": "完成", "confirm": "确认", "close": "关闭" },
+  "time": { "today": "今天", "tomorrow": "明天", "days_ago": "{{count}}天前", "days_ago_one": "{{count}}天前", "overdue": "已过期", "due_soon": "即将到期", "upcoming": "即将到来", "never": "从不" },
+  "empty": { "no_pets": "暂无宠物", "no_pets_sub": "添加您的第一只宠物", "no_records": "暂无记录", "no_records_sub": "开始追踪健康状况" },
+  "errors": { "generic": "出现错误，请重试。", "required": "此字段为必填项", "invalid_date": "请输入有效日期" },
+  "home": { "greeting": "你好 👋", "your_pets": "我的宠物", "pet_count_one": "{{count}}只宠物", "pet_count_other": "{{count}}只宠物", "overdue_alert_one": "{{count}}个疫苗已过期！", "overdue_alert_other": "{{count}}个疫苗已过期！", "due_soon_alert_one": "{{count}}个疫苗即将到期", "due_soon_alert_other": "{{count}}个疫苗即将到期", "view_calendar": "点击查看日历 →" },
+  "health_screen": { "quick_add": "快速添加", "upcoming_vaccines": "即将到来的疫苗", "all_good": "所有疫苗均已更新！", "vaccine": "疫苗", "medication": "药物", "weight": "体重", "vet_visit": "兽医就诊" },
+  "calendar_screen": { "next_90": "未来90天", "no_events": "暂无即将到来的事件", "no_events_sub": "疫苗和预约提醒将显示在此处" },
+  "settings_screen": { "title": "设置", "notifications": "通知", "vaccine_reminders": "疫苗提醒", "reminder_sub": "到期前7天提醒", "weight_unit": "体重单位", "unit": "单位", "language": "语言", "about": "关于", "rate_app": "为PawRecord评分", "privacy_policy": "隐私政策", "terms": "使用条款", "data": "数据", "delete_data": "删除所有数据", "delete_data_title": "⚠️ 删除所有数据", "delete_data_msg": "这将永久删除您所有的宠物、健康记录和设置。此操作无法撤销。", "delete_data_confirm": "删除全部" },
+  "pet_detail": { "export_pdf": "导出PDF", "delete": "删除", "no_vaccines": "暂无疫苗记录", "no_medications": "暂无药物记录", "no_weight": "暂无体重记录", "no_visits": "暂无兽医就诊记录", "vaccines_stat": "疫苗", "meds_stat": "药物", "visits_stat": "就诊", "delete_title": "删除{{name}}？", "delete_msg": "所有健康记录将被永久删除。" },
+  "forms": { "choose_species": "请选择物种", "add_pet": "🐾  添加宠物", "save_vaccine": "保存疫苗", "save_medication": "保存药物", "save_weight": "保存体重", "save_visit": "保存就诊", "pet_name": "宠物名字", "pet_name_placeholder": "例如：小白、豆豆...", "species": "物种", "gender": "性别", "breed_optional": "品种（可选）", "dob_optional": "出生日期（可选）", "color_optional": "颜色（可选）", "color_placeholder": "例如：金色、黑白色", "microchip_optional": "芯片ID（可选）", "vaccine_name": "疫苗名称", "vaccine_placeholder": "例如：狂犬病、犬瘟热...", "date_given": "接种日期", "next_due_optional": "下次接种日期（可选）", "vet_optional": "兽医（可选）", "vet_placeholder": "李医生", "batch_optional": "批次号（可选）", "batch_placeholder": "批次 / 序列号", "notes_optional": "备注（可选）", "notes_placeholder": "其他备注...", "med_name": "药物名称", "med_placeholder": "例如：阿莫西林、福来恩...", "dosage": "剂量", "dosage_placeholder": "例如：50mg、1片", "frequency": "频率", "freq_daily": "🌅 每天", "freq_weekly": "📆 每周", "freq_monthly": "🗓 每月", "freq_as_needed": "⚡ 按需", "start_date": "开始日期", "end_date_optional": "结束日期（可选）", "end_date_hint": "如持续用药请留空", "weight_kg": "体重（千克）", "weight_placeholder": "例如：12.5", "visit_date": "就诊日期", "visit_reason": "就诊原因", "visit_reason_placeholder": "例如：年度检查、疾病...", "clinic_optional": "诊所（可选）", "diagnosis_optional": "诊断（可选）", "diagnosis_placeholder": "兽医诊断...", "treatment_optional": "治疗（可选）", "treatment_placeholder": "处方治疗...", "cost_optional": "费用（可选）", "add_vaccine_title": "添加疫苗", "add_vaccine_sub": "记录宠物的疫苗接种", "add_med_title": "添加药物", "add_med_sub": "追踪宠物的用药情况", "log_weight_title": "记录体重", "log_weight_sub": "追踪宠物的体重变化", "add_visit_title": "兽医就诊", "add_visit_sub": "记录一次兽医预约", "error_save": "无法保存，请重试。" },
+  "gender": { "male": "♂ 公", "female": "♀ 母", "unknown": "? 未知" },
+  "reminders": {
+    "title": "提醒",
+    "add": "+ 添加",
+    "new": "新提醒",
+    "type": "类型",
+    "time": "时间",
+    "days": "天数",
+    "every_day": "每天",
+    "save": "保存提醒",
+    "no_reminders": "暂无提醒",
+    "no_reminders_sub": "添加食物、水或药物提醒",
+    "delete_title": "删除提醒",
+    "delete_msg": "删除「{{label}}」？",
+    "food": "食物",
+    "water": "水",
+    "medication": "药物",
+    "custom": "自定义",
+    "days_short": ["一","二","三","四","五","六","日"],
+    "permission_title": "通知已关闭",
+    "permission_body": "请在设置中开启通知，以接收提醒。",
+    "permission_settings": "打开设置"
+  },
+  "pet_detail_labels": {
+    "given": "已给予",
+    "next_due": "下次到期",
+    "started": "已开始",
+    "dr_prefix": "医生"
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "宠物的所有健康信息\n尽在一处",
+        "sub": "疫苗、药物、体重记录和就诊历史 — 井井有条，一目了然。",
+        "features": ["💉 疫苗追踪", "💊 药物管理", "⚖️ 体重记录"]
+      },
+      {
+        "title": "再也不会\n错过疫苗接种",
+        "sub": "智能提醒在每次疫苗到期前7天通知您。",
+        "features": ["📅 到期提醒", "📱 推送通知", "✅ 状态追踪"]
+      },
+      {
+        "title": "一键分享给\n您的兽医",
+        "sub": "轻触一下，即可导出专业的PDF健康报告。",
+        "features": ["📊 完整健康报告", "🏥 兽医专用格式", "☁️ iCloud备份"]
+      }
+    ],
+    "skip": "跳过",
+    "next": "下一步 →",
+    "get_started": "🚀  立即开始",
+    "free_plan": "使用免费计划继续"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 该喂{{name}}啦！",
+        "{{name}}饿了！ 🐾",
+        "别忘了给{{name}}喂食 🍗",
+        "{{name}}迫不及待要吃饭了！ 🦴"
+      ],
+      "bodies": [
+        "你的小宝贝在等待它的饭食 🥣",
+        "满满的食碗，快乐的宠物！ 🐾",
+        "爱你的宠物 — 按时喂食 ❤️",
+        "{{name}}正摇着尾巴等待食物 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 给{{name}}换新鲜的水！",
+        "{{name}}需要补水 💦",
+        "给{{name}}喝水的时间到啦 🚰",
+        "保持{{name}}水分充足！ 💧"
+      ],
+      "bodies": [
+        "别忘了给水碗加水 🥤",
+        "新鲜的水让宠物保持健康 💙",
+        "一口清水，满满的爱 💧",
+        "{{name}}的水碗需要续水了 ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 该给{{name}}喂药了",
+        "{{name}}的药到时间了 🏥",
+        "健康第一 — {{name}}的药！ 💊",
+        "不要忘记给{{name}}喂药 🩺"
+      ],
+      "bodies": [
+        "坚持护理让{{name}}保持健康 💪",
+        "一小剂量，大大不同 ❤️",
+        "{{name}}的健康依赖着你 🐾",
+        "是时候给{{name}}喂药了 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}的疫苗就要到期了！",
+      "body": "{{vaccine}}将在7天后到期，请预约兽医 📅"
+    },
+    "custom": {
+      "title": "⏰ {{name}}的提醒",
+      "body": "{{label}} — 别忘了！ 🐾"
+    }
+  }
+}

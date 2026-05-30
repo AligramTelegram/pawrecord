@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "De gezondheid van uw huisdier, georganiseerd",
+  "nav": { "pets": "Mijn dieren", "health": "Gezondheid", "calendar": "Agenda", "settings": "Instellingen" },
+  "actions": { "add": "Toevoegen", "save": "Opslaan", "cancel": "Annuleren", "delete": "Verwijderen", "edit": "Bewerken", "share": "Delen", "export_pdf": "PDF exporteren", "back": "Terug", "done": "Klaar", "confirm": "Bevestigen", "close": "Sluiten" },
+  "time": { "today": "Vandaag", "tomorrow": "Morgen", "days_ago": "{{count}} dagen geleden", "days_ago_one": "{{count}} dag geleden", "overdue": "Verlopen", "due_soon": "Binnenkort vervallend", "upcoming": "Binnenkort", "never": "Nooit" },
+  "empty": { "no_pets": "Nog geen dieren", "no_pets_sub": "Voeg uw eerste huisdier toe", "no_records": "Geen records", "no_records_sub": "Begin met gezondheidsregistratie" },
+  "errors": { "generic": "Er ging iets mis. Probeer opnieuw.", "required": "Dit veld is verplicht", "invalid_date": "Voer een geldige datum in" },
+  "home": { "greeting": "Hallo 👋", "your_pets": "Mijn dieren", "pet_count_one": "{{count}} huisdier", "pet_count_other": "{{count}} huisdieren", "overdue_alert_one": "{{count}} vaccin verlopen!", "overdue_alert_other": "{{count}} vaccins verlopen!", "due_soon_alert_one": "{{count}} vaccin vervalt binnenkort", "due_soon_alert_other": "{{count}} vaccins vervallen binnenkort", "view_calendar": "Tik om agenda te bekijken →" },
+  "health_screen": { "quick_add": "Snel toevoegen", "upcoming_vaccines": "Aankomende vaccins", "all_good": "Alle vaccins up-to-date!", "vaccine": "Vaccin", "medication": "Medicatie", "weight": "Gewicht", "vet_visit": "Dierenartbezoek" },
+  "calendar_screen": { "next_90": "Komende 90 dagen", "no_events": "Geen aankomende evenementen", "no_events_sub": "Herinneringen voor vaccins en afspraken verschijnen hier" },
+  "settings_screen": { "title": "Instellingen", "notifications": "Meldingen", "vaccine_reminders": "Vaccinherinneringen", "reminder_sub": "7 dagen voor vervaldatum", "weight_unit": "Gewichtseenheid", "unit": "Eenheid", "language": "Taal", "about": "Over", "rate_app": "PawRecord beoordelen", "privacy_policy": "Privacybeleid", "terms": "Gebruiksvoorwaarden", "data": "Gegevens", "delete_data": "Alle gegevens verwijderen", "delete_data_title": "⚠️ Alle gegevens verwijderen", "delete_data_msg": "Dit verwijdert permanent al uw huisdieren, gezondheidsgegevens en instellingen. Deze actie kan niet ongedaan worden gemaakt.", "delete_data_confirm": "Alles verwijderen" },
+  "pet_detail": { "export_pdf": "PDF exporteren", "delete": "Verwijderen", "no_vaccines": "Geen vaccins geregistreerd", "no_medications": "Geen medicatie geregistreerd", "no_weight": "Geen gewichtsrecords", "no_visits": "Geen dierenartbezoeken geregistreerd", "vaccines_stat": "Vaccins", "meds_stat": "Medicatie", "visits_stat": "Bezoeken", "delete_title": "{{name}} verwijderen?", "delete_msg": "Alle gezondheidsgegevens worden permanent verwijderd." },
+  "forms": { "choose_species": "Kies een diersoort", "add_pet": "🐾  Huisdier toevoegen", "save_vaccine": "Vaccin opslaan", "save_medication": "Medicatie opslaan", "save_weight": "Gewicht opslaan", "save_visit": "Bezoek opslaan", "pet_name": "Naam van het huisdier", "pet_name_placeholder": "bijv. Buddy, Luna...", "species": "Diersoort", "gender": "Geslacht", "breed_optional": "Ras (optioneel)", "dob_optional": "Geboortedatum (optioneel)", "color_optional": "Kleur (optioneel)", "color_placeholder": "bijv. Goudkleurig, Zwart-wit", "microchip_optional": "Microchip-ID (optioneel)", "vaccine_name": "Vaccinnaam", "vaccine_placeholder": "bijv. Hondsdolheid, DHPP...", "date_given": "Toedieningsdatum", "next_due_optional": "Volgende vervaldatum (optioneel)", "vet_optional": "Dierenarts (optioneel)", "vet_placeholder": "Dr. Jansen", "batch_optional": "Batchnummer (optioneel)", "batch_placeholder": "Lot- / serienummer", "notes_optional": "Notities (optioneel)", "notes_placeholder": "Aanvullende notities...", "med_name": "Medicatienaam", "med_placeholder": "bijv. Amoxicilline, Frontline...", "dosage": "Dosering", "dosage_placeholder": "bijv. 50 mg, 1 tablet", "frequency": "Frequentie", "freq_daily": "🌅 Dagelijks", "freq_weekly": "📆 Wekelijks", "freq_monthly": "🗓 Maandelijks", "freq_as_needed": "⚡ Indien nodig", "start_date": "Startdatum", "end_date_optional": "Einddatum (optioneel)", "end_date_hint": "Leeg laten als doorlopend", "weight_kg": "Gewicht (kg)", "weight_placeholder": "bijv. 12,5", "visit_date": "Bezoekdatum", "visit_reason": "Reden voor bezoek", "visit_reason_placeholder": "bijv. Jaarlijkse controle, ziekte...", "clinic_optional": "Kliniek (optioneel)", "diagnosis_optional": "Diagnose (optioneel)", "diagnosis_placeholder": "Diagnose van de dierenarts...", "treatment_optional": "Behandeling (optioneel)", "treatment_placeholder": "Voorgeschreven behandeling...", "cost_optional": "Kosten (optioneel)", "add_vaccine_title": "Vaccin toevoegen", "add_vaccine_sub": "Een vaccinatie registreren voor uw huisdier", "add_med_title": "Medicatie toevoegen", "add_med_sub": "Medicatie van uw huisdier bijhouden", "log_weight_title": "Gewicht vastleggen", "log_weight_sub": "Het gewicht van uw huisdier in de tijd bijhouden", "add_visit_title": "Dierenartbezoek", "add_visit_sub": "Een veterinaire afspraak registreren", "error_save": "Kon niet opslaan. Probeer opnieuw." },
+  "gender": { "male": "♂ Mannelijk", "female": "♀ Vrouwelijk", "unknown": "? Onbekend" },
+  "reminders": {
+    "title": "Herinneringen",
+    "add": "+ Toevoegen",
+    "new": "Nieuwe herinnering",
+    "type": "Type",
+    "time": "Tijd",
+    "days": "Dagen",
+    "every_day": "Elke dag",
+    "save": "Herinnering opslaan",
+    "no_reminders": "Nog geen herinneringen",
+    "no_reminders_sub": "Voeg herinneringen toe voor voer, water of medicatie",
+    "delete_title": "Herinnering verwijderen",
+    "delete_msg": "\"{{label}}\" verwijderen?",
+    "food": "Voer",
+    "water": "Water",
+    "medication": "Medicatie",
+    "custom": "Aangepast",
+    "days_short": ["Ma","Di","Wo","Do","Vr","Za","Zo"],
+    "permission_title": "Meldingen uitgeschakeld",
+    "permission_body": "Schakel meldingen in via Instellingen om herinneringen te ontvangen.",
+    "permission_settings": "Instellingen openen"
+  },
+  "pet_detail_labels": {
+    "given": "Toegediend",
+    "next_due": "Volgende vervaldatum",
+    "started": "Gestart",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "Alle gezondheidsinfo van uw huisdier\nop één plek",
+        "sub": "Vaccins, medicatie, gewichtsregistraties en dierenartbezoeken — overzichtelijk georganiseerd.",
+        "features": ["💉 Vaccintracker", "💊 Medicatie", "⚖️ Gewichtsregistraties"]
+      },
+      {
+        "title": "Mis nooit meer\neen vaccin",
+        "sub": "Slimme herinneringen waarschuwen u 7 dagen voor elk vaccin.",
+        "features": ["📅 Vervaldatumalerts", "📱 Pushmeldingen", "✅ Statusbeheer"]
+      },
+      {
+        "title": "Deel direct\nmet uw dierenarts",
+        "sub": "Exporteer met één tik een professioneel PDF-gezondheidsrapport.",
+        "features": ["📊 Volledig gezondheidsrapport", "🏥 Klaar voor de dierenarts", "☁️ iCloud-back-up"]
+      }
+    ],
+    "skip": "Overslaan",
+    "next": "Volgende →",
+    "get_started": "🚀  Aan de slag",
+    "free_plan": "Doorgaan met gratis plan"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 Etenstijd voor {{name}}!",
+        "{{name}} heeft honger! 🐾",
+        "Vergeet het voer van {{name}} niet 🍗",
+        "{{name}} kan niet wachten om te eten! 🦴"
+      ],
+      "bodies": [
+        "Uw kleine vriend wacht op zijn maaltijd 🥣",
+        "Een blij huisdier begint met een volle bak! 🐾",
+        "Toon uw liefde — voed op tijd ❤️",
+        "{{name}} kwispelt al van opwinding voor het eten 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 Vers water voor {{name}}!",
+        "{{name}} heeft vocht nodig 💦",
+        "Tijd voor water voor {{name}} 🚰",
+        "Houd {{name}} gehydrateerd! 💧"
+      ],
+      "bodies": [
+        "Vergeet de waterbak niet bij te vullen 🥤",
+        "Vers water houdt uw huisdier gezond 💙",
+        "Een slok water, een wereld van liefde 💧",
+        "De waterbak van {{name}} moet bijgevuld worden ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 Medicatietijd voor {{name}}",
+        "Medicatie van {{name}} is aan de beurt 🏥",
+        "Gezondheid eerst — medicatie van {{name}}! 💊",
+        "Sla de medicatie van {{name}} niet over 🩺"
+      ],
+      "bodies": [
+        "Regelmatige zorg houdt {{name}} gezond 💪",
+        "Een kleine dosis, een groot verschil ❤️",
+        "Het welzijn van {{name}} hangt van u af 🐾",
+        "Tijd om {{name}} zijn medicatie te geven 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 Het vaccin van {{name}} komt eraan!",
+      "body": "{{vaccine}} vervalt over 7 dagen. Maak een afspraak bij de dierenarts 📅"
+    },
+    "custom": {
+      "title": "⏰ Herinnering voor {{name}}",
+      "body": "{{label}} — vergeet het niet! 🐾"
+    }
+  }
+}

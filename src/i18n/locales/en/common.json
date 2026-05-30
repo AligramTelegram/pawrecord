@@ -1,0 +1,267 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "Your pet's health, organized",
+  "nav": {
+    "pets": "My Pets",
+    "health": "Health",
+    "calendar": "Calendar",
+    "settings": "Settings"
+  },
+  "actions": {
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "share": "Share",
+    "export_pdf": "Export PDF",
+    "back": "Back",
+    "done": "Done",
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "time": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "days_ago": "{{count}} days ago",
+    "days_ago_one": "{{count}} day ago",
+    "overdue": "Overdue",
+    "due_soon": "Due Soon",
+    "upcoming": "Upcoming",
+    "never": "Never"
+  },
+  "empty": {
+    "no_pets": "No pets yet",
+    "no_pets_sub": "Add your first furry friend to get started",
+    "no_records": "No records yet",
+    "no_records_sub": "Start tracking your pet's health"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "required": "This field is required",
+    "invalid_date": "Please enter a valid date"
+  },
+  "home": {
+    "greeting": "Hello 👋",
+    "your_pets": "Your Pets",
+    "pet_count_one": "{{count}} pet",
+    "pet_count_other": "{{count}} pets",
+    "overdue_alert_one": "{{count}} vaccine overdue!",
+    "overdue_alert_other": "{{count}} vaccines overdue!",
+    "due_soon_alert_one": "{{count}} vaccine due soon",
+    "due_soon_alert_other": "{{count}} vaccines due soon",
+    "view_calendar": "Tap to view calendar →"
+  },
+  "health_screen": {
+    "quick_add": "Quick Add",
+    "upcoming_vaccines": "Upcoming Vaccines",
+    "all_good": "All vaccines up to date!",
+    "vaccine": "Vaccine",
+    "medication": "Medication",
+    "weight": "Weight",
+    "vet_visit": "Vet Visit"
+  },
+  "calendar_screen": {
+    "next_90": "Next 90 Days",
+    "no_events": "No upcoming events",
+    "no_events_sub": "Vaccine and appointment reminders will appear here"
+  },
+  "settings_screen": {
+    "title": "Settings",
+    "notifications": "Notifications",
+    "vaccine_reminders": "Vaccine Reminders",
+    "reminder_sub": "7 days before due date",
+    "weight_unit": "Weight Unit",
+    "unit": "Unit",
+    "language": "Language",
+    "about": "About",
+    "rate_app": "Rate PawRecord",
+    "privacy_policy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "data": "Data",
+    "delete_data": "Delete All Data",
+    "delete_data_title": "⚠️ Delete All Data",
+    "delete_data_msg": "This will permanently delete all your pets, health records, and settings. This action cannot be undone.",
+    "delete_data_confirm": "Delete Everything"
+  },
+  "pet_detail": {
+    "export_pdf": "Export PDF",
+    "delete": "Delete",
+    "no_vaccines": "No vaccines recorded yet",
+    "no_medications": "No medications recorded yet",
+    "no_weight": "No weight records yet",
+    "no_visits": "No vet visits recorded yet",
+    "vaccines_stat": "Vaccines",
+    "meds_stat": "Medications",
+    "visits_stat": "Visits",
+    "delete_title": "Delete {{name}}?",
+    "delete_msg": "All health records will be permanently deleted."
+  },
+  "forms": {
+    "choose_species": "Choose a species below",
+    "add_pet": "🐾  Add Pet",
+    "save_vaccine": "Save Vaccine",
+    "save_medication": "Save Medication",
+    "save_weight": "Save Weight",
+    "save_visit": "Save Visit",
+    "pet_name": "Pet Name",
+    "pet_name_placeholder": "e.g. Buddy, Luna...",
+    "species": "Species",
+    "gender": "Gender",
+    "breed_optional": "Breed (optional)",
+    "dob_optional": "Date of Birth (optional)",
+    "color_optional": "Color (optional)",
+    "color_placeholder": "e.g. Golden, Black & White",
+    "microchip_optional": "Microchip ID (optional)",
+    "vaccine_name": "Vaccine Name",
+    "vaccine_placeholder": "e.g. Rabies, DHPP...",
+    "date_given": "Date Given",
+    "next_due_optional": "Next Due Date (optional)",
+    "vet_optional": "Veterinarian (optional)",
+    "vet_placeholder": "Dr. Smith",
+    "batch_optional": "Batch Number (optional)",
+    "batch_placeholder": "Lot / serial number",
+    "notes_optional": "Notes (optional)",
+    "notes_placeholder": "Any additional notes...",
+    "med_name": "Medication Name",
+    "med_placeholder": "e.g. Amoxicillin, Frontline...",
+    "dosage": "Dosage",
+    "dosage_placeholder": "e.g. 50mg, 1 tablet",
+    "frequency": "Frequency",
+    "freq_daily": "🌅 Daily",
+    "freq_weekly": "📆 Weekly",
+    "freq_monthly": "🗓 Monthly",
+    "freq_as_needed": "⚡ As needed",
+    "start_date": "Start Date",
+    "end_date_optional": "End Date (optional)",
+    "end_date_hint": "Leave empty if ongoing",
+    "weight_kg": "Weight (kg)",
+    "weight_placeholder": "e.g. 12.5",
+    "visit_date": "Visit Date",
+    "visit_reason": "Reason for Visit",
+    "visit_reason_placeholder": "e.g. Annual checkup, illness...",
+    "clinic_optional": "Clinic (optional)",
+    "diagnosis_optional": "Diagnosis (optional)",
+    "diagnosis_placeholder": "Vet's diagnosis...",
+    "treatment_optional": "Treatment (optional)",
+    "treatment_placeholder": "Prescribed treatment...",
+    "cost_optional": "Cost (optional)",
+    "add_vaccine_title": "Add Vaccine",
+    "add_vaccine_sub": "Record a vaccination for your pet",
+    "add_med_title": "Add Medication",
+    "add_med_sub": "Track your pet's medications",
+    "log_weight_title": "Log Weight",
+    "log_weight_sub": "Track your pet's weight over time",
+    "add_visit_title": "Vet Visit",
+    "add_visit_sub": "Log a veterinary appointment",
+    "error_save": "Could not save. Please try again."
+  },
+  "gender": {
+    "male": "♂ Male",
+    "female": "♀ Female",
+    "unknown": "? Unknown"
+  },
+  "reminders": {
+    "title": "Reminders",
+    "add": "+ Add",
+    "new": "New Reminder",
+    "type": "Type",
+    "time": "Time",
+    "days": "Days",
+    "every_day": "Every day",
+    "save": "Save Reminder",
+    "no_reminders": "No reminders yet",
+    "no_reminders_sub": "Add food, water or medication reminders",
+    "delete_title": "Delete Reminder",
+    "delete_msg": "Delete \"{{label}}\"?",
+    "food": "Food",
+    "water": "Water",
+    "medication": "Medication",
+    "custom": "Custom",
+    "days_short": ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+    "permission_title": "Notifications Disabled",
+    "permission_body": "Enable notifications in Settings to receive reminders.",
+    "permission_settings": "Open Settings"
+  },
+  "pet_detail_labels": {
+    "given": "Given",
+    "next_due": "Next due",
+    "started": "Started",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "All Your Pet's\nHealth in One Place",
+        "sub": "Vaccines, medications, weight logs, and vet visits — organized beautifully.",
+        "features": ["💉 Vaccine tracker", "💊 Medications", "⚖️ Weight logs"]
+      },
+      {
+        "title": "Never Miss\na Vaccine Again",
+        "sub": "Smart reminders notify you 7 days before each vaccine is due.",
+        "features": ["📅 Due date alerts", "📱 Push notifications", "✅ Status tracking"]
+      },
+      {
+        "title": "Share with\nYour Vet Instantly",
+        "sub": "Export a professional PDF health report with one tap.",
+        "features": ["📊 Full health report", "🏥 Vet-ready format", "☁️ iCloud backup"]
+      }
+    ],
+    "skip": "Skip",
+    "next": "Next  →",
+    "get_started": "🚀  Get Started",
+    "free_plan": "Continue with free plan"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 Mealtime for {{name}}!",
+        "{{name}} is hungry! 🐾",
+        "Don't forget {{name}}'s food 🍗",
+        "Time to feed {{name}}! 🦴"
+      ],
+      "bodies": [
+        "Your little one is waiting for their meal 🥣",
+        "A happy pet starts with a full bowl! 🐾",
+        "Love your pet — feed them on time ❤️",
+        "{{name}}'s tail is wagging for food 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 Fresh water for {{name}}!",
+        "{{name}} needs hydration 💦",
+        "Water time for {{name}} 🚰",
+        "Keep {{name}} hydrated! 💧"
+      ],
+      "bodies": [
+        "Don't forget to refill the water bowl 🥤",
+        "Fresh water keeps your pet healthy 💙",
+        "A sip of water, a world of love 💧",
+        "{{name}}'s water bowl needs a refill ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 Medication time for {{name}}",
+        "{{name}}'s medicine is due 🏥",
+        "Health first — {{name}}'s meds! 💊",
+        "Don't skip {{name}}'s medication 🩺"
+      ],
+      "bodies": [
+        "Consistent care keeps {{name}} healthy 💪",
+        "One small dose, a big difference for {{name}} ❤️",
+        "{{name}}'s wellbeing counts on you 🐾",
+        "Time to give {{name}} their medicine 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}'s vaccine is coming up!",
+      "body": "{{vaccine}} is due in 7 days. Book your vet appointment 📅"
+    },
+    "custom": {
+      "title": "⏰ Reminder for {{name}}",
+      "body": "{{label}} — don't forget! 🐾"
+    }
+  }
+}

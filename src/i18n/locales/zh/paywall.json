@@ -1,0 +1,18 @@
+{
+  "trial_title": "免费试用Premium 7天",
+  "trial_subtitle": "之后每月 ¥28。随时可取消。",
+  "features": { "unlimited_pets": "无限宠物", "pdf_report": "PDF兽医报告", "icloud_backup": "iCloud备份", "unlimited_records": "无限健康记录", "photo_gallery": "照片库", "appointments": "预约日历" },
+  "plans": { "monthly": { "label": "月付", "price": "¥28", "period": "每月", "trial": "7天免费试用" }, "annual": { "label": "年付", "price": "¥178", "period": "每年", "save_badge": "节省48%", "trial": "14天免费试用", "monthly_equivalent": "仅需¥15/月" } },
+  "cta_trial": "开始免费试用", "cta_subscribe": "继续",
+  "restore": "恢复购买",
+  "legal": "随时可在设置 > 订阅中取消。除非在试用期结束前24小时取消，否则订阅将自动续订。",
+  "links": { "privacy": "隐私政策", "terms": "使用条款" },
+  "free_tier_prompt": "继续使用免费版",
+  "social_proof": "全球{{count}}+宠物主人信赖",
+  "premium_badge": "高级版",
+  "restore_success": "高级版已恢复！欢迎回来。",
+  "restore_not_found": "未找到有效订阅。",
+  "purchase_error": "出现了问题，请重试。",
+  "purchase_limit_title": "升级到高级版",
+  "purchase_limit_body": "免费版仅支持1只宠物。升级后可添加无限宠物。"
+}

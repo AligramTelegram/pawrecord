@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "La salute del tuo animale, organizzata",
+  "nav": { "pets": "I miei animali", "health": "Salute", "calendar": "Calendario", "settings": "Impostazioni" },
+  "actions": { "add": "Aggiungi", "save": "Salva", "cancel": "Annulla", "delete": "Elimina", "edit": "Modifica", "share": "Condividi", "export_pdf": "Esporta PDF", "back": "Indietro", "done": "Fatto", "confirm": "Conferma", "close": "Chiudi" },
+  "time": { "today": "Oggi", "tomorrow": "Domani", "days_ago": "{{count}} giorni fa", "days_ago_one": "{{count}} giorno fa", "overdue": "In ritardo", "due_soon": "In scadenza", "upcoming": "In arrivo", "never": "Mai" },
+  "empty": { "no_pets": "Nessun animale", "no_pets_sub": "Aggiungi il tuo primo amico", "no_records": "Nessun record", "no_records_sub": "Inizia a monitorare la salute" },
+  "errors": { "generic": "Qualcosa è andato storto. Riprova.", "required": "Questo campo è obbligatorio", "invalid_date": "Inserisci una data valida" },
+  "home": { "greeting": "Ciao 👋", "your_pets": "I miei animali", "pet_count_one": "{{count}} animale", "pet_count_other": "{{count}} animali", "overdue_alert_one": "{{count}} vaccino scaduto!", "overdue_alert_other": "{{count}} vaccini scaduti!", "due_soon_alert_one": "{{count}} vaccino in scadenza", "due_soon_alert_other": "{{count}} vaccini in scadenza", "view_calendar": "Tocca per vedere il calendario →" },
+  "health_screen": { "quick_add": "Aggiunta rapida", "upcoming_vaccines": "Vaccini in arrivo", "all_good": "Tutti i vaccini sono aggiornati!", "vaccine": "Vaccino", "medication": "Farmaco", "weight": "Peso", "vet_visit": "Visita veterinaria" },
+  "calendar_screen": { "next_90": "Prossimi 90 giorni", "no_events": "Nessun evento in arrivo", "no_events_sub": "I promemoria per vaccini e appuntamenti appariranno qui" },
+  "settings_screen": { "title": "Impostazioni", "notifications": "Notifiche", "vaccine_reminders": "Promemoria vaccini", "reminder_sub": "7 giorni prima della scadenza", "weight_unit": "Unità di peso", "unit": "Unità", "language": "Lingua", "about": "Informazioni", "rate_app": "Valuta PawRecord", "privacy_policy": "Informativa sulla privacy", "terms": "Termini di utilizzo", "data": "Dati", "delete_data": "Elimina tutti i dati", "delete_data_title": "⚠️ Elimina tutti i dati", "delete_data_msg": "Questo eliminerà definitivamente tutti gli animali, i dati sanitari e le impostazioni. Questa azione non può essere annullata.", "delete_data_confirm": "Elimina tutto" },
+  "pet_detail": { "export_pdf": "Esporta PDF", "delete": "Elimina", "no_vaccines": "Nessun vaccino registrato", "no_medications": "Nessun farmaco registrato", "no_weight": "Nessun peso registrato", "no_visits": "Nessuna visita veterinaria registrata", "vaccines_stat": "Vaccini", "meds_stat": "Farmaci", "visits_stat": "Visite", "delete_title": "Eliminare {{name}}?", "delete_msg": "Tutti i dati sanitari verranno eliminati definitivamente." },
+  "forms": { "choose_species": "Scegli una specie", "add_pet": "🐾  Aggiungi animale", "save_vaccine": "Salva vaccino", "save_medication": "Salva farmaco", "save_weight": "Salva peso", "save_visit": "Salva visita", "pet_name": "Nome dell'animale", "pet_name_placeholder": "es. Buddy, Luna...", "species": "Specie", "gender": "Sesso", "breed_optional": "Razza (opzionale)", "dob_optional": "Data di nascita (opzionale)", "color_optional": "Colore (opzionale)", "color_placeholder": "es. Dorato, Bianco e nero", "microchip_optional": "ID microchip (opzionale)", "vaccine_name": "Nome del vaccino", "vaccine_placeholder": "es. Rabbia, DHPP...", "date_given": "Data di somministrazione", "next_due_optional": "Prossima scadenza (opzionale)", "vet_optional": "Veterinario (opzionale)", "vet_placeholder": "Dott. Rossi", "batch_optional": "Numero di lotto (opzionale)", "batch_placeholder": "Numero lotto / serie", "notes_optional": "Note (opzionale)", "notes_placeholder": "Note aggiuntive...", "med_name": "Nome del farmaco", "med_placeholder": "es. Amoxicillina, Frontline...", "dosage": "Dosaggio", "dosage_placeholder": "es. 50 mg, 1 compressa", "frequency": "Frequenza", "freq_daily": "🌅 Quotidiano", "freq_weekly": "📆 Settimanale", "freq_monthly": "🗓 Mensile", "freq_as_needed": "⚡ Al bisogno", "start_date": "Data di inizio", "end_date_optional": "Data di fine (opzionale)", "end_date_hint": "Lascia vuoto se in corso", "weight_kg": "Peso (kg)", "weight_placeholder": "es. 12,5", "visit_date": "Data della visita", "visit_reason": "Motivo della visita", "visit_reason_placeholder": "es. Controllo annuale, malattia...", "clinic_optional": "Clinica (opzionale)", "diagnosis_optional": "Diagnosi (opzionale)", "diagnosis_placeholder": "Diagnosi del veterinario...", "treatment_optional": "Trattamento (opzionale)", "treatment_placeholder": "Trattamento prescritto...", "cost_optional": "Costo (opzionale)", "add_vaccine_title": "Aggiungi vaccino", "add_vaccine_sub": "Registra una vaccinazione per il tuo animale", "add_med_title": "Aggiungi farmaco", "add_med_sub": "Monitora i farmaci del tuo animale", "log_weight_title": "Registra peso", "log_weight_sub": "Monitora il peso del tuo animale nel tempo", "add_visit_title": "Visita veterinaria", "add_visit_sub": "Registra un appuntamento veterinario", "error_save": "Impossibile salvare. Riprova." },
+  "gender": { "male": "♂ Maschio", "female": "♀ Femmina", "unknown": "? Sconosciuto" },
+  "reminders": {
+    "title": "Promemoria",
+    "add": "+ Aggiungi",
+    "new": "Nuovo promemoria",
+    "type": "Tipo",
+    "time": "Orario",
+    "days": "Giorni",
+    "every_day": "Ogni giorno",
+    "save": "Salva promemoria",
+    "no_reminders": "Nessun promemoria",
+    "no_reminders_sub": "Aggiungi promemoria per cibo, acqua o farmaci",
+    "delete_title": "Elimina promemoria",
+    "delete_msg": "Eliminare \"{{label}}\"?",
+    "food": "Cibo",
+    "water": "Acqua",
+    "medication": "Farmaco",
+    "custom": "Personalizzato",
+    "days_short": ["Lun","Mar","Mer","Gio","Ven","Sab","Dom"],
+    "permission_title": "Notifiche disabilitate",
+    "permission_body": "Abilita le notifiche nelle Impostazioni per ricevere i promemoria.",
+    "permission_settings": "Apri impostazioni"
+  },
+  "pet_detail_labels": {
+    "given": "Somministrato",
+    "next_due": "Prossima scadenza",
+    "started": "Iniziato",
+    "dr_prefix": "Dott."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "Tutta la salute del tuo animale\nin un unico posto",
+        "sub": "Vaccini, farmaci, registrazioni del peso e visite veterinarie — organizzati alla perfezione.",
+        "features": ["💉 Registro vaccini", "💊 Farmaci", "⚖️ Registrazioni del peso"]
+      },
+      {
+        "title": "Non perdere mai\nun vaccino",
+        "sub": "Promemoria intelligenti ti avvisano 7 giorni prima di ogni vaccino.",
+        "features": ["📅 Avvisi di scadenza", "📱 Notifiche push", "✅ Monitoraggio dello stato"]
+      },
+      {
+        "title": "Condividi immediatamente\ncon il tuo veterinario",
+        "sub": "Esporta un referto sanitario PDF professionale con un solo tocco.",
+        "features": ["📊 Referto sanitario completo", "🏥 Formato pronto per il veterinario", "☁️ Backup su iCloud"]
+      }
+    ],
+    "skip": "Salta",
+    "next": "Avanti →",
+    "get_started": "🚀  Inizia",
+    "free_plan": "Continua con il piano gratuito"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 È ora di mangiare per {{name}}!",
+        "{{name}} ha fame! 🐾",
+        "Non dimenticare il cibo di {{name}} 🍗",
+        "{{name}} non vede l'ora di mangiare! 🦴"
+      ],
+      "bodies": [
+        "Il tuo piccolo sta aspettando il suo pasto 🥣",
+        "Un animale felice inizia con una ciotola piena! 🐾",
+        "Vuoi bene al tuo animale — nutrilo in orario ❤️",
+        "{{name}} scodinzola aspettando il cibo 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 Acqua fresca per {{name}}!",
+        "{{name}} ha bisogno di idratarsi 💦",
+        "È ora dell'acqua per {{name}} 🚰",
+        "Tieni {{name}} idratato! 💧"
+      ],
+      "bodies": [
+        "Non dimenticare di riempire la ciotola dell'acqua 🥤",
+        "L'acqua fresca mantiene sano il tuo animale 💙",
+        "Un sorso d'acqua, un mondo d'amore 💧",
+        "La ciotola dell'acqua di {{name}} ha bisogno di essere riempita ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 È ora delle medicine per {{name}}",
+        "Le medicine di {{name}} sono in scadenza 🏥",
+        "La salute prima di tutto — i farmaci di {{name}}! 💊",
+        "Non saltare le medicine di {{name}} 🩺"
+      ],
+      "bodies": [
+        "Le cure costanti mantengono {{name}} in salute 💪",
+        "Una piccola dose, una grande differenza ❤️",
+        "Il benessere di {{name}} dipende da te 🐾",
+        "È ora di dare la medicina a {{name}} 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 Il vaccino di {{name}} si avvicina!",
+      "body": "{{vaccine}} scade tra 7 giorni. Prenota la visita dal veterinario 📅"
+    },
+    "custom": {
+      "title": "⏰ Promemoria per {{name}}",
+      "body": "{{label}} — non dimenticare! 🐾"
+    }
+  }
+}

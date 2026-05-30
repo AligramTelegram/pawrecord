@@ -1,0 +1,12 @@
+{
+  "title": "マイペット", "add_pet": "ペットを追加", "edit_pet": "ペットを編集", "pet_profile": "プロフィール",
+  "fields": { "name": "名前", "name_placeholder": "例：マックス", "species": "種類", "breed": "品種", "breed_placeholder": "例：ゴールデンレトリバー", "date_of_birth": "誕生日", "gender": "性別", "color": "毛色 / 特徴", "microchip": "マイクロチップID", "photo": "写真" },
+  "species": { "dog": "犬", "cat": "猫", "rabbit": "うさぎ", "bird": "鳥", "other": "その他" },
+  "gender": { "male": "オス", "female": "メス", "unknown": "不明" },
+  "age": { "years": "{{count}}歳", "years_one": "{{count}}歳", "months": "{{count}}ヶ月", "months_one": "{{count}}ヶ月", "days": "{{count}}日", "days_one": "{{count}}日" },
+  "delete_confirm": "{{name}}を削除しますか？", "delete_confirm_sub": "{{name}}の全ての健康記録が削除されます。",
+  "sections": { "vaccines": "ワクチン", "medications": "薬", "weight": "体重", "visits": "動物病院" },
+  "empty_title": "最初のペットを追加",
+  "empty_subtitle": "ワクチン、薬、動物病院の記録をまとめて管理。",
+  "empty_cta": "ペットを追加"
+}

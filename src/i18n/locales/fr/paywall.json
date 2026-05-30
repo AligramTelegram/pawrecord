@@ -1,0 +1,19 @@
+{
+  "trial_title": "Essayez Premium gratuitement 7 jours",
+  "trial_subtitle": "Puis 3,99 € / mois. Résiliable à tout moment.",
+  "features": { "unlimited_pets": "Animaux illimités", "pdf_report": "Rapports PDF vétérinaires", "icloud_backup": "Sauvegarde iCloud", "unlimited_records": "Dossiers de santé illimités", "photo_gallery": "Galerie photos", "appointments": "Calendrier de rendez-vous" },
+  "plans": { "monthly": { "label": "Mensuel", "price": "3,99 €", "period": "par mois", "trial": "7 jours d'essai gratuit" }, "annual": { "label": "Annuel", "price": "24,99 €", "period": "par an", "save_badge": "Économisez 48%", "trial": "14 jours d'essai gratuit", "monthly_equivalent": "Seulement 2,08 €/mois" } },
+  "cta_trial": "Commencer l'essai gratuit",
+  "cta_subscribe": "Continuer",
+  "restore": "Restaurer les achats",
+  "legal": "Résiliable à tout moment dans Réglages > Abonnements. L'abonnement se renouvelle automatiquement sauf résiliation 24 heures avant la fin de la période d'essai.",
+  "links": { "privacy": "Politique de confidentialité", "terms": "Conditions d'utilisation" },
+  "free_tier_prompt": "Continuer avec le plan gratuit",
+  "social_proof": "Approuvé par {{count}}+ propriétaires d'animaux",
+  "premium_badge": "Premium",
+  "restore_success": "Premium restauré ! Bon retour.",
+  "restore_not_found": "Aucun abonnement actif trouvé.",
+  "purchase_error": "Une erreur s'est produite. Veuillez réessayer.",
+  "purchase_limit_title": "Passer à Premium",
+  "purchase_limit_body": "Le plan gratuit permet 1 animal. Passez à Premium pour en ajouter un nombre illimité."
+}

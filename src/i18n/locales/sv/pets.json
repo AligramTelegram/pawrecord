@@ -1,0 +1,12 @@
+{
+  "title": "Mina husdjur", "add_pet": "Lägg till husdjur", "edit_pet": "Redigera husdjur", "pet_profile": "Profil",
+  "fields": { "name": "Namn", "name_placeholder": "t.ex. Max", "species": "Djurslag", "breed": "Ras", "breed_placeholder": "t.ex. Golden Retriever", "date_of_birth": "Födelsedatum", "gender": "Kön", "color": "Färg / Kännetecken", "microchip": "Mikrochip-ID", "photo": "Foto" },
+  "species": { "dog": "Hund", "cat": "Katt", "rabbit": "Kanin", "bird": "Fågel", "other": "Annat" },
+  "gender": { "male": "Hane", "female": "Hona", "unknown": "Okänt" },
+  "age": { "years": "{{count}} år", "years_one": "{{count}} år", "months": "{{count}} månader", "months_one": "{{count}} månad", "days": "{{count}} dagar", "days_one": "{{count}} dag" },
+  "delete_confirm": "Ta bort {{name}}?", "delete_confirm_sub": "Alla hälsoregister för {{name}} tas bort permanent.",
+  "sections": { "vaccines": "Vacciner", "medications": "Mediciner", "weight": "Vikt", "visits": "Veterinärbesök" },
+  "empty_title": "Lägg till ditt första husdjur",
+  "empty_subtitle": "Vaccinationer, mediciner och veterinärbesök — allt på ett ställe.",
+  "empty_cta": "Lägg till husdjur"
+}

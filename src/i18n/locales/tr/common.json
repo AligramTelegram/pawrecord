@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "Evcil hayvanınızın sağlığı, düzenli halde",
+  "nav": { "pets": "Hayvanlarım", "health": "Sağlık", "calendar": "Takvim", "settings": "Ayarlar" },
+  "actions": { "add": "Ekle", "save": "Kaydet", "cancel": "İptal", "delete": "Sil", "edit": "Düzenle", "share": "Paylaş", "export_pdf": "PDF Dışa Aktar", "back": "Geri", "done": "Tamam", "confirm": "Onayla", "close": "Kapat" },
+  "time": { "today": "Bugün", "tomorrow": "Yarın", "days_ago": "{{count}} gün önce", "days_ago_one": "{{count}} gün önce", "overdue": "Gecikmiş", "due_soon": "Yakında dolacak", "upcoming": "Yaklaşan", "never": "Hiçbir zaman" },
+  "empty": { "no_pets": "Henüz hayvan yok", "no_pets_sub": "İlk dostunuzu ekleyin", "no_records": "Kayıt yok", "no_records_sub": "Sağlık takibine başlayın" },
+  "errors": { "generic": "Bir şeyler ters gitti. Tekrar deneyin.", "required": "Bu alan zorunludur", "invalid_date": "Geçerli bir tarih girin" },
+  "home": { "greeting": "Merhaba 👋", "your_pets": "Evcil Hayvanlarım", "pet_count_one": "{{count}} hayvan", "pet_count_other": "{{count}} hayvan", "overdue_alert_one": "{{count}} aşı gecikmiş!", "overdue_alert_other": "{{count}} aşı gecikmiş!", "due_soon_alert_one": "{{count}} aşı yakında dolacak", "due_soon_alert_other": "{{count}} aşı yakında dolacak", "view_calendar": "Takvimi görmek için dokun →" },
+  "health_screen": { "quick_add": "Hızlı Ekle", "upcoming_vaccines": "Yaklaşan Aşılar", "all_good": "Tüm aşılar güncel!", "vaccine": "Aşı", "medication": "İlaç", "weight": "Ağırlık", "vet_visit": "Veteriner Ziyareti" },
+  "calendar_screen": { "next_90": "Önümüzdeki 90 Gün", "no_events": "Yaklaşan etkinlik yok", "no_events_sub": "Aşı ve randevu hatırlatmaları burada görünecek" },
+  "settings_screen": { "title": "Ayarlar", "notifications": "Bildirimler", "vaccine_reminders": "Aşı Hatırlatmaları", "reminder_sub": "Son tarihten 7 gün önce", "weight_unit": "Ağırlık Birimi", "unit": "Birim", "language": "Dil", "about": "Hakkında", "rate_app": "PawRecord'u Değerlendir", "privacy_policy": "Gizlilik Politikası", "terms": "Kullanım Koşulları", "data": "Veriler", "delete_data": "Tüm Verileri Sil", "delete_data_title": "⚠️ Tüm Verileri Sil", "delete_data_msg": "Bu işlem tüm hayvanlarınızı, sağlık kayıtlarınızı ve ayarlarınızı kalıcı olarak siler. Bu işlem geri alınamaz.", "delete_data_confirm": "Her Şeyi Sil" },
+  "pet_detail": { "export_pdf": "PDF Dışa Aktar", "delete": "Sil", "no_vaccines": "Henüz aşı kaydı yok", "no_medications": "Henüz ilaç kaydı yok", "no_weight": "Henüz ağırlık kaydı yok", "no_visits": "Henüz veteriner ziyareti yok", "vaccines_stat": "Aşılar", "meds_stat": "İlaçlar", "visits_stat": "Ziyaretler", "delete_title": "{{name}} silinsin mi?", "delete_msg": "Tüm sağlık kayıtları kalıcı olarak silinecektir." },
+  "forms": { "choose_species": "Bir tür seçin", "add_pet": "🐾  Hayvan Ekle", "save_vaccine": "Aşıyı Kaydet", "save_medication": "İlacı Kaydet", "save_weight": "Ağırlığı Kaydet", "save_visit": "Ziyareti Kaydet", "pet_name": "Hayvanın Adı", "pet_name_placeholder": "örn. Karamel, Pamuk...", "species": "Tür", "gender": "Cinsiyet", "breed_optional": "Irk (isteğe bağlı)", "dob_optional": "Doğum Tarihi (isteğe bağlı)", "color_optional": "Renk (isteğe bağlı)", "color_placeholder": "örn. Sarı, Siyah-Beyaz", "microchip_optional": "Mikroçip Kimliği (isteğe bağlı)", "vaccine_name": "Aşı Adı", "vaccine_placeholder": "örn. Kuduz, Karma Aşı...", "date_given": "Yapılma Tarihi", "next_due_optional": "Sonraki Tarih (isteğe bağlı)", "vet_optional": "Veteriner (isteğe bağlı)", "vet_placeholder": "Dr. Yılmaz", "batch_optional": "Seri Numarası (isteğe bağlı)", "batch_placeholder": "Lot / seri numarası", "notes_optional": "Notlar (isteğe bağlı)", "notes_placeholder": "Ek notlar...", "med_name": "İlaç Adı", "med_placeholder": "örn. Amoksisilin, Frontline...", "dosage": "Doz", "dosage_placeholder": "örn. 50 mg, 1 tablet", "frequency": "Sıklık", "freq_daily": "🌅 Günlük", "freq_weekly": "📆 Haftalık", "freq_monthly": "🗓 Aylık", "freq_as_needed": "⚡ Gerektiğinde", "start_date": "Başlangıç Tarihi", "end_date_optional": "Bitiş Tarihi (isteğe bağlı)", "end_date_hint": "Devam ediyorsa boş bırakın", "weight_kg": "Ağırlık (kg)", "weight_placeholder": "örn. 12,5", "visit_date": "Ziyaret Tarihi", "visit_reason": "Ziyaret Sebebi", "visit_reason_placeholder": "örn. Yıllık kontrol, hastalık...", "clinic_optional": "Klinik (isteğe bağlı)", "diagnosis_optional": "Tanı (isteğe bağlı)", "diagnosis_placeholder": "Veterinerin tanısı...", "treatment_optional": "Tedavi (isteğe bağlı)", "treatment_placeholder": "Uygulanan tedavi...", "cost_optional": "Ücret (isteğe bağlı)", "add_vaccine_title": "Aşı Ekle", "add_vaccine_sub": "Hayvanınız için bir aşı kaydı oluşturun", "add_med_title": "İlaç Ekle", "add_med_sub": "Hayvanınızın ilaçlarını takip edin", "log_weight_title": "Ağırlık Kaydet", "log_weight_sub": "Hayvanınızın ağırlık değişimini takip edin", "add_visit_title": "Veteriner Ziyareti", "add_visit_sub": "Veteriner randevusunu kaydedin", "error_save": "Kaydedilemedi. Tekrar deneyin." },
+  "gender": { "male": "♂ Erkek", "female": "♀ Dişi", "unknown": "? Bilinmiyor" },
+  "reminders": {
+    "title": "Hatırlatmalar",
+    "add": "+ Ekle",
+    "new": "Yeni Hatırlatma",
+    "type": "Tür",
+    "time": "Saat",
+    "days": "Günler",
+    "every_day": "Her gün",
+    "save": "Kaydet",
+    "no_reminders": "Henüz hatırlatma yok",
+    "no_reminders_sub": "Mama, su veya ilaç hatırlatması ekle",
+    "delete_title": "Hatırlatmayı Sil",
+    "delete_msg": "\"{{label}}\" silinsin mi?",
+    "food": "Mama",
+    "water": "Su",
+    "medication": "İlaç",
+    "custom": "Özel",
+    "days_short": ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"],
+    "permission_title": "Bildirimler Kapalı",
+    "permission_body": "Hatırlatma alabilmek için Ayarlar'dan bildirimlere izin verin.",
+    "permission_settings": "Ayarları Aç"
+  },
+  "pet_detail_labels": {
+    "given": "Verildi",
+    "next_due": "Sonraki tarih",
+    "started": "Başlandı",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "Evcil Hayvanının\nSağlığı Tek Yerde",
+        "sub": "Aşılar, ilaçlar, kilo takibi ve veteriner ziyaretleri — düzenli ve güzel.",
+        "features": ["💉 Aşı takibi", "💊 İlaçlar", "⚖️ Kilo kayıtları"]
+      },
+      {
+        "title": "Bir Aşıyı\nAsla Kaçırma",
+        "sub": "Akıllı hatırlatıcılar, her aşı tarihinden 7 gün önce seni uyarır.",
+        "features": ["📅 Son tarih uyarıları", "📱 Push bildirimleri", "✅ Durum takibi"]
+      },
+      {
+        "title": "Veterinerinle\nAnında Paylaş",
+        "sub": "Tek dokunuşla profesyonel PDF sağlık raporu oluştur.",
+        "features": ["📊 Tam sağlık raporu", "🏥 Veterinere hazır format", "☁️ iCloud yedekleme"]
+      }
+    ],
+    "skip": "Atla",
+    "next": "İleri  →",
+    "get_started": "🚀  Başlayalım",
+    "free_plan": "Ücretsiz planla devam et"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 {{name}}'in mama vakti!",
+        "{{name}} seni bekliyor! 🐾",
+        "{{name}}'in mamasını unutma 🍗",
+        "{{name}} acıktı! 🦴"
+      ],
+      "bodies": [
+        "Minik dostu mutlu et, mama kabını doldur 🥣",
+        "Mutlu bir hayvan, dolu bir kap demek! 🐾",
+        "Sevgini göster — zamanında besle ❤️",
+        "{{name}} kuyruğunu sallayarak seni bekliyor 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 {{name}} için taze su zamanı!",
+        "{{name}} susadı! 💦",
+        "{{name}}'in su kabını doldur 🚰",
+        "{{name}}'i suyu olmadan bırakma! 💧"
+      ],
+      "bodies": [
+        "Taze su, sağlıklı bir hayvan demek 🥤",
+        "Su kabını doldurmayı unutma 💙",
+        "Bir yudum su, bir dünya sevgi 💧",
+        "{{name}}'in su kabı boşalmış ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 {{name}}'in ilaç saati!",
+        "{{name}}'in ilacını verme zamanı 🏥",
+        "Sağlık önce — {{name}}'in ilacı! 💊",
+        "{{name}}'in ilacını atlama 🩺"
+      ],
+      "bodies": [
+        "Düzenli ilaç, sağlıklı {{name}} demek 💪",
+        "Küçük bir doz, büyük bir fark ❤️",
+        "{{name}}'in sağlığı senin elinde 🐾",
+        "Bir dakikanı ayır, {{name}}'ini koru 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}'in aşı tarihi yaklaşıyor!",
+      "body": "{{vaccine}} aşısına 7 gün kaldı. Veteriner randevusu al 📅"
+    },
+    "custom": {
+      "title": "⏰ {{name}} için hatırlatma",
+      "body": "{{label}} — unutma! 🐾"
+    }
+  }
+}

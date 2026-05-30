@@ -1,0 +1,18 @@
+{
+  "trial_title": "Prova Premium gratis i 7 dagar",
+  "trial_subtitle": "Sedan 39 kr / månad. Avsluta när du vill.",
+  "features": { "unlimited_pets": "Obegränsat antal husdjur", "pdf_report": "PDF-veterinärrapporter", "icloud_backup": "iCloud-säkerhetskopiering", "unlimited_records": "Obegränsade hälsoregister", "photo_gallery": "Fotogalleri", "appointments": "Bokningskalender" },
+  "plans": { "monthly": { "label": "Månadsvis", "price": "39 kr", "period": "per månad", "trial": "7 dagars gratis provperiod" }, "annual": { "label": "Årsvis", "price": "249 kr", "period": "per år", "save_badge": "Spara 48%", "trial": "14 dagars gratis provperiod", "monthly_equivalent": "Bara 21 kr/månad" } },
+  "cta_trial": "Starta gratis provperiod", "cta_subscribe": "Fortsätt",
+  "restore": "Återställ köp",
+  "legal": "Avsluta när som helst i Inställningar > Prenumerationer. Prenumerationen förnyas automatiskt om den inte avbryts 24 timmar före provperiodens slut.",
+  "links": { "privacy": "Integritetspolicy", "terms": "Användarvillkor" },
+  "free_tier_prompt": "Fortsätt med gratisplan",
+  "social_proof": "Betrodd av {{count}}+ husdjursägare",
+  "premium_badge": "Premium",
+  "restore_success": "Premium återställt! Välkommen tillbaka.",
+  "restore_not_found": "Inget aktivt abonnemang hittades.",
+  "purchase_error": "Något gick fel. Försök igen.",
+  "purchase_limit_title": "Uppgradera till Premium",
+  "purchase_limit_body": "Gratisplanen tillåter 1 husdjur. Uppgradera för att lägga till obegränsat antal husdjur."
+}

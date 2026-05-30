@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "Din husdjurshälsa, organiserad",
+  "nav": { "pets": "Mina husdjur", "health": "Hälsa", "calendar": "Kalender", "settings": "Inställningar" },
+  "actions": { "add": "Lägg till", "save": "Spara", "cancel": "Avbryt", "delete": "Ta bort", "edit": "Redigera", "share": "Dela", "export_pdf": "Exportera PDF", "back": "Tillbaka", "done": "Klar", "confirm": "Bekräfta", "close": "Stäng" },
+  "time": { "today": "Idag", "tomorrow": "Imorgon", "days_ago": "{{count}} dagar sedan", "days_ago_one": "{{count}} dag sedan", "overdue": "Försenad", "due_soon": "Snart förfaller", "upcoming": "Kommande", "never": "Aldrig" },
+  "empty": { "no_pets": "Inga husdjur ännu", "no_pets_sub": "Lägg till ditt första husdjur", "no_records": "Inga poster", "no_records_sub": "Börja spåra hälsan" },
+  "errors": { "generic": "Något gick fel. Försök igen.", "required": "Det här fältet är obligatoriskt", "invalid_date": "Ange ett giltigt datum" },
+  "home": { "greeting": "Hej 👋", "your_pets": "Mina husdjur", "pet_count_one": "{{count}} husdjur", "pet_count_other": "{{count}} husdjur", "overdue_alert_one": "{{count}} vaccin försenat!", "overdue_alert_other": "{{count}} vacciner försenade!", "due_soon_alert_one": "{{count}} vaccin snart förfallet", "due_soon_alert_other": "{{count}} vacciner snart förfallna", "view_calendar": "Tryck för att se kalender →" },
+  "health_screen": { "quick_add": "Lägg till snabbt", "upcoming_vaccines": "Kommande vacciner", "all_good": "Alla vacciner är uppdaterade!", "vaccine": "Vaccin", "medication": "Medicin", "weight": "Vikt", "vet_visit": "Veterinärbesök" },
+  "calendar_screen": { "next_90": "Nästa 90 dagar", "no_events": "Inga kommande händelser", "no_events_sub": "Påminnelser om vacciner och bokningar visas här" },
+  "settings_screen": { "title": "Inställningar", "notifications": "Aviseringar", "vaccine_reminders": "Vaccinpåminnelser", "reminder_sub": "7 dagar före förfallodatum", "weight_unit": "Viktenhet", "unit": "Enhet", "language": "Språk", "about": "Om", "rate_app": "Betygsätt PawRecord", "privacy_policy": "Integritetspolicy", "terms": "Användarvillkor", "data": "Data", "delete_data": "Radera all data", "delete_data_title": "⚠️ Radera all data", "delete_data_msg": "Detta raderar permanent alla dina husdjur, hälsouppgifter och inställningar. Denna åtgärd kan inte ångras.", "delete_data_confirm": "Radera allt" },
+  "pet_detail": { "export_pdf": "Exportera PDF", "delete": "Ta bort", "no_vaccines": "Inga vacciner registrerade", "no_medications": "Inga mediciner registrerade", "no_weight": "Inga viktposter", "no_visits": "Inga veterinärbesök registrerade", "vaccines_stat": "Vacciner", "meds_stat": "Mediciner", "visits_stat": "Besök", "delete_title": "Ta bort {{name}}?", "delete_msg": "Alla hälsouppgifter raderas permanent." },
+  "forms": { "choose_species": "Välj en art", "add_pet": "🐾  Lägg till husdjur", "save_vaccine": "Spara vaccin", "save_medication": "Spara medicin", "save_weight": "Spara vikt", "save_visit": "Spara besök", "pet_name": "Husdjurets namn", "pet_name_placeholder": "t.ex. Buddy, Luna...", "species": "Art", "gender": "Kön", "breed_optional": "Ras (valfritt)", "dob_optional": "Födelsedatum (valfritt)", "color_optional": "Färg (valfritt)", "color_placeholder": "t.ex. Guldfärgad, Svart och vit", "microchip_optional": "Mikrochip-ID (valfritt)", "vaccine_name": "Vaccin namn", "vaccine_placeholder": "t.ex. Rabies, DHPP...", "date_given": "Administrationsdatum", "next_due_optional": "Nästa förfallodatum (valfritt)", "vet_optional": "Veterinär (valfritt)", "vet_placeholder": "Dr. Andersson", "batch_optional": "Batchnummer (valfritt)", "batch_placeholder": "Lot- / serienummer", "notes_optional": "Anteckningar (valfritt)", "notes_placeholder": "Ytterligare anteckningar...", "med_name": "Medicinnamn", "med_placeholder": "t.ex. Amoxicillin, Frontline...", "dosage": "Dosering", "dosage_placeholder": "t.ex. 50 mg, 1 tablett", "frequency": "Frekvens", "freq_daily": "🌅 Dagligen", "freq_weekly": "📆 Veckovis", "freq_monthly": "🗓 Månadsvis", "freq_as_needed": "⚡ Vid behov", "start_date": "Startdatum", "end_date_optional": "Slutdatum (valfritt)", "end_date_hint": "Lämna tomt om pågående", "weight_kg": "Vikt (kg)", "weight_placeholder": "t.ex. 12,5", "visit_date": "Besöksdatum", "visit_reason": "Besöksanledning", "visit_reason_placeholder": "t.ex. Årskontroll, sjukdom...", "clinic_optional": "Klinik (valfritt)", "diagnosis_optional": "Diagnos (valfritt)", "diagnosis_placeholder": "Veterinärens diagnos...", "treatment_optional": "Behandling (valfritt)", "treatment_placeholder": "Föreskriven behandling...", "cost_optional": "Kostnad (valfritt)", "add_vaccine_title": "Lägg till vaccin", "add_vaccine_sub": "Registrera en vaccination för ditt husdjur", "add_med_title": "Lägg till medicin", "add_med_sub": "Spåra ditt husdjurs mediciner", "log_weight_title": "Logga vikt", "log_weight_sub": "Spåra ditt husdjurs viktutveckling", "add_visit_title": "Veterinärbesök", "add_visit_sub": "Registrera ett veterinärbesök", "error_save": "Kunde inte spara. Försök igen." },
+  "gender": { "male": "♂ Hane", "female": "♀ Hona", "unknown": "? Okänt" },
+  "reminders": {
+    "title": "Påminnelser",
+    "add": "+ Lägg till",
+    "new": "Ny påminnelse",
+    "type": "Typ",
+    "time": "Tid",
+    "days": "Dagar",
+    "every_day": "Varje dag",
+    "save": "Spara påminnelse",
+    "no_reminders": "Inga påminnelser ännu",
+    "no_reminders_sub": "Lägg till påminnelser för mat, vatten eller medicin",
+    "delete_title": "Ta bort påminnelse",
+    "delete_msg": "Ta bort \"{{label}}\"?",
+    "food": "Mat",
+    "water": "Vatten",
+    "medication": "Medicin",
+    "custom": "Anpassad",
+    "days_short": ["Mån","Tis","Ons","Tor","Fre","Lör","Sön"],
+    "permission_title": "Aviseringar inaktiverade",
+    "permission_body": "Aktivera aviseringar i Inställningar för att få påminnelser.",
+    "permission_settings": "Öppna inställningar"
+  },
+  "pet_detail_labels": {
+    "given": "Given",
+    "next_due": "Nästa förfallodag",
+    "started": "Påbörjad",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "All din husdjurshälsa\npå ett ställe",
+        "sub": "Vacciner, mediciner, viktlogg och veterinärbesök — snyggt organiserade.",
+        "features": ["💉 Vaccinspårning", "💊 Mediciner", "⚖️ Viktlogg"]
+      },
+      {
+        "title": "Missa aldrig\nett vaccin igen",
+        "sub": "Smarta påminnelser varnar dig 7 dagar innan varje vaccin förfaller.",
+        "features": ["📅 Förfallodatumsvarningar", "📱 Push-notiser", "✅ Statusspårning"]
+      },
+      {
+        "title": "Dela omedelbart\nmed din veterinär",
+        "sub": "Exportera en professionell PDF-hälsorapport med ett tryck.",
+        "features": ["📊 Fullständig hälsorapport", "🏥 Veterinärklart format", "☁️ iCloud-backup"]
+      }
+    ],
+    "skip": "Hoppa över",
+    "next": "Nästa →",
+    "get_started": "🚀  Kom igång",
+    "free_plan": "Fortsätt med gratisplanen"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 Dags att äta för {{name}}!",
+        "{{name}} är hungrig! 🐾",
+        "Glöm inte {{name}}s mat 🍗",
+        "{{name}} kan inte vänta med att äta! 🦴"
+      ],
+      "bodies": [
+        "Din lilla vän väntar på sin måltid 🥣",
+        "Ett lyckligt husdjur börjar med en full skål! 🐾",
+        "Visa kärlek — mata dem i tid ❤️",
+        "{{name}} viftar på svansen för mat 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 Friskt vatten för {{name}}!",
+        "{{name}} behöver dricka 💦",
+        "Dags för vatten till {{name}} 🚰",
+        "Håll {{name}} hydrerad! 💧"
+      ],
+      "bodies": [
+        "Glöm inte att fylla på vattenskålen 🥤",
+        "Friskt vatten håller ditt husdjur friskt 💙",
+        "En klunk vatten, ett hav av kärlek 💧",
+        "{{name}}s vattenskål behöver fyllas på ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 Medicintid för {{name}}",
+        "{{name}}s medicin ska ges nu 🏥",
+        "Hälsan först — {{name}}s medicin! 💊",
+        "Missa inte {{name}}s medicin 🩺"
+      ],
+      "bodies": [
+        "Konsekvent vård håller {{name}} frisk 💪",
+        "En liten dos, en stor skillnad ❤️",
+        "{{name}}s välmående beror på dig 🐾",
+        "Dags att ge {{name}} sin medicin 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}s vaccin är snart dags!",
+      "body": "{{vaccine}} är om 7 dagar. Boka tid hos veterinären 📅"
+    },
+    "custom": {
+      "title": "⏰ Påminnelse för {{name}}",
+      "body": "{{label}} — glöm inte! 🐾"
+    }
+  }
+}

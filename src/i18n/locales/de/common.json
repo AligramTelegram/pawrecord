@@ -1,0 +1,119 @@
+{
+  "app_name": "PawRecord",
+  "tagline": "Die Gesundheit deines Haustieres, organisiert",
+  "nav": { "pets": "Meine Tiere", "health": "Gesundheit", "calendar": "Kalender", "settings": "Einstellungen" },
+  "actions": { "add": "Hinzufügen", "save": "Speichern", "cancel": "Abbrechen", "delete": "Löschen", "edit": "Bearbeiten", "share": "Teilen", "export_pdf": "PDF exportieren", "back": "Zurück", "done": "Fertig", "confirm": "Bestätigen", "close": "Schließen" },
+  "time": { "today": "Heute", "tomorrow": "Morgen", "days_ago": "Vor {{count}} Tagen", "days_ago_one": "Vor {{count}} Tag", "overdue": "Überfällig", "due_soon": "Bald fällig", "upcoming": "Bevorstehend", "never": "Nie" },
+  "empty": { "no_pets": "Noch keine Tiere", "no_pets_sub": "Füge dein erstes Tier hinzu", "no_records": "Noch keine Einträge", "no_records_sub": "Starte die Gesundheitsverfolgung" },
+  "errors": { "generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.", "required": "Dieses Feld ist erforderlich", "invalid_date": "Bitte gib ein gültiges Datum ein" },
+  "home": { "greeting": "Hallo 👋", "your_pets": "Meine Tiere", "pet_count_one": "{{count}} Tier", "pet_count_other": "{{count}} Tiere", "overdue_alert_one": "{{count}} Impfung überfällig!", "overdue_alert_other": "{{count}} Impfungen überfällig!", "due_soon_alert_one": "{{count}} Impfung bald fällig", "due_soon_alert_other": "{{count}} Impfungen bald fällig", "view_calendar": "Tippen um Kalender zu öffnen →" },
+  "health_screen": { "quick_add": "Schnell hinzufügen", "upcoming_vaccines": "Anstehende Impfungen", "all_good": "Alle Impfungen aktuell!", "vaccine": "Impfung", "medication": "Medikament", "weight": "Gewicht", "vet_visit": "Tierarztbesuch" },
+  "calendar_screen": { "next_90": "Nächste 90 Tage", "no_events": "Keine bevorstehenden Ereignisse", "no_events_sub": "Impf- und Terminerinnerungen erscheinen hier" },
+  "settings_screen": { "title": "Einstellungen", "notifications": "Benachrichtigungen", "vaccine_reminders": "Impferinnerungen", "reminder_sub": "7 Tage vor Fälligkeitsdatum", "weight_unit": "Gewichtseinheit", "unit": "Einheit", "language": "Sprache", "about": "Über", "rate_app": "PawRecord bewerten", "privacy_policy": "Datenschutzrichtlinie", "terms": "Nutzungsbedingungen", "data": "Daten", "delete_data": "Alle Daten löschen", "delete_data_title": "⚠️ Alle Daten löschen", "delete_data_msg": "Dadurch werden alle Haustiere, Gesundheitsdaten und Einstellungen dauerhaft gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.", "delete_data_confirm": "Alles löschen" },
+  "pet_detail": { "export_pdf": "PDF exportieren", "delete": "Löschen", "no_vaccines": "Noch keine Impfungen", "no_medications": "Noch keine Medikamente", "no_weight": "Noch keine Gewichtseinträge", "no_visits": "Noch keine Tierarztbesuche", "vaccines_stat": "Impfungen", "meds_stat": "Medikamente", "visits_stat": "Besuche", "delete_title": "{{name}} löschen?", "delete_msg": "Alle Gesundheitsdaten werden dauerhaft gelöscht." },
+  "forms": { "choose_species": "Wähle eine Tierart", "add_pet": "🐾  Tier hinzufügen", "save_vaccine": "Impfung speichern", "save_medication": "Medikament speichern", "save_weight": "Gewicht speichern", "save_visit": "Besuch speichern", "pet_name": "Name des Tieres", "pet_name_placeholder": "z. B. Buddy, Luna...", "species": "Tierart", "gender": "Geschlecht", "breed_optional": "Rasse (optional)", "dob_optional": "Geburtsdatum (optional)", "color_optional": "Farbe (optional)", "color_placeholder": "z. B. Golden, Schwarz-Weiß", "microchip_optional": "Mikrochip-ID (optional)", "vaccine_name": "Impfstoffname", "vaccine_placeholder": "z. B. Tollwut, DHPP...", "date_given": "Datum der Impfung", "next_due_optional": "Nächstes Fälligkeitsdatum (optional)", "vet_optional": "Tierarzt (optional)", "vet_placeholder": "Dr. Müller", "batch_optional": "Chargennummer (optional)", "batch_placeholder": "Los- / Seriennummer", "notes_optional": "Notizen (optional)", "notes_placeholder": "Zusätzliche Notizen...", "med_name": "Medikamentenname", "med_placeholder": "z. B. Amoxicillin, Frontline...", "dosage": "Dosierung", "dosage_placeholder": "z. B. 50 mg, 1 Tablette", "frequency": "Häufigkeit", "freq_daily": "🌅 Täglich", "freq_weekly": "📆 Wöchentlich", "freq_monthly": "🗓 Monatlich", "freq_as_needed": "⚡ Bei Bedarf", "start_date": "Startdatum", "end_date_optional": "Enddatum (optional)", "end_date_hint": "Leer lassen, wenn fortlaufend", "weight_kg": "Gewicht (kg)", "weight_placeholder": "z. B. 12,5", "visit_date": "Besuchsdatum", "visit_reason": "Grund des Besuchs", "visit_reason_placeholder": "z. B. Jahresuntersuchung, Krankheit...", "clinic_optional": "Klinik (optional)", "diagnosis_optional": "Diagnose (optional)", "diagnosis_placeholder": "Diagnose des Tierarztes...", "treatment_optional": "Behandlung (optional)", "treatment_placeholder": "Verschriebene Behandlung...", "cost_optional": "Kosten (optional)", "add_vaccine_title": "Impfung hinzufügen", "add_vaccine_sub": "Impfung für dein Tier erfassen", "add_med_title": "Medikament hinzufügen", "add_med_sub": "Medikamente deines Tieres verfolgen", "log_weight_title": "Gewicht eintragen", "log_weight_sub": "Gewicht deines Tieres im Zeitverlauf verfolgen", "add_visit_title": "Tierarztbesuch", "add_visit_sub": "Tierarzttermin erfassen", "error_save": "Speichern nicht möglich. Bitte versuche es erneut." },
+  "gender": { "male": "♂ Männlich", "female": "♀ Weiblich", "unknown": "? Unbekannt" },
+  "reminders": {
+    "title": "Erinnerungen",
+    "add": "+ Hinzufügen",
+    "new": "Neue Erinnerung",
+    "type": "Typ",
+    "time": "Uhrzeit",
+    "days": "Tage",
+    "every_day": "Jeden Tag",
+    "save": "Erinnerung speichern",
+    "no_reminders": "Noch keine Erinnerungen",
+    "no_reminders_sub": "Futter-, Wasser- oder Medikamentenerinnerungen hinzufügen",
+    "delete_title": "Erinnerung löschen",
+    "delete_msg": "\"{{label}}\" löschen?",
+    "food": "Futter",
+    "water": "Wasser",
+    "medication": "Medikament",
+    "custom": "Benutzerdefiniert",
+    "days_short": ["Mo","Di","Mi","Do","Fr","Sa","So"],
+    "permission_title": "Benachrichtigungen deaktiviert",
+    "permission_body": "Aktiviere Benachrichtigungen in den Einstellungen, um Erinnerungen zu erhalten.",
+    "permission_settings": "Einstellungen öffnen"
+  },
+  "pet_detail_labels": {
+    "given": "Verabreicht",
+    "next_due": "Nächste Fälligkeit",
+    "started": "Begonnen",
+    "dr_prefix": "Dr."
+  },
+  "onboarding": {
+    "slides": [
+      {
+        "title": "Alle Gesundheitsdaten\ndeines Haustieres auf einen Blick",
+        "sub": "Impfungen, Medikamente, Gewichtsprotokolle und Tierarztbesuche — übersichtlich organisiert.",
+        "features": ["💉 Impf-Tracker", "💊 Medikamente", "⚖️ Gewichtsprotokolle"]
+      },
+      {
+        "title": "Nie wieder\neine Impfung verpassen",
+        "sub": "Smarte Erinnerungen benachrichtigen dich 7 Tage vor jedem Impftermin.",
+        "features": ["📅 Fälligkeitserinnerungen", "📱 Push-Benachrichtigungen", "✅ Statusverfolgung"]
+      },
+      {
+        "title": "Sofort mit deinem\nTierarzt teilen",
+        "sub": "Exportiere mit einem Tipp einen professionellen PDF-Gesundheitsbericht.",
+        "features": ["📊 Vollständiger Gesundheitsbericht", "🏥 Tierarzt-geeignetes Format", "☁️ iCloud-Backup"]
+      }
+    ],
+    "skip": "Überspringen",
+    "next": "Weiter →",
+    "get_started": "🚀  Los geht's",
+    "free_plan": "Mit kostenlosem Plan fortfahren"
+  },
+  "notif": {
+    "food": {
+      "titles": [
+        "🍖 Futterzeit für {{name}}!",
+        "{{name}} hat Hunger! 🐾",
+        "Vergiss {{name}}s Futter nicht 🍗",
+        "{{name}} kann es kaum erwarten zu essen! 🦴"
+      ],
+      "bodies": [
+        "Dein Kleines wartet auf seine Mahlzeit 🥣",
+        "Ein glückliches Tier beginnt mit einem vollen Napf! 🐾",
+        "Zeig deinem Tier Liebe — füttere es pünktlich ❤️",
+        "{{name}} wedelt schon mit dem Schwanz vorm Futter 🐕"
+      ]
+    },
+    "water": {
+      "titles": [
+        "💧 Frisches Wasser für {{name}}!",
+        "{{name}} braucht Flüssigkeit 💦",
+        "Wasserzeit für {{name}} 🚰",
+        "Halte {{name}} hydratisiert! 💧"
+      ],
+      "bodies": [
+        "Vergiss nicht, den Wassernapf nachzufüllen 🥤",
+        "Frisches Wasser hält dein Tier gesund 💙",
+        "Ein Schluck Wasser, eine Welt voller Liebe 💧",
+        "{{name}}s Wassernapf muss aufgefüllt werden ✨"
+      ]
+    },
+    "medication": {
+      "titles": [
+        "💊 Medikamentenzeit für {{name}}",
+        "{{name}}s Medizin ist fällig 🏥",
+        "Gesundheit zuerst — {{name}}s Medis! 💊",
+        "Vergiss nicht {{name}}s Medikament 🩺"
+      ],
+      "bodies": [
+        "Regelmäßige Fürsorge hält {{name}} gesund 💪",
+        "Eine kleine Dosis, ein großer Unterschied ❤️",
+        "{{name}}s Wohlbefinden liegt in deinen Händen 🐾",
+        "Zeit, {{name}} sein Medikament zu geben 💊"
+      ]
+    },
+    "vaccine": {
+      "title": "💉 {{name}}s Impfung steht bevor!",
+      "body": "{{vaccine}} ist in 7 Tagen fällig. Termin beim Tierarzt buchen 📅"
+    },
+    "custom": {
+      "title": "⏰ Erinnerung für {{name}}",
+      "body": "{{label}} — nicht vergessen! 🐾"
+    }
+  }
+}

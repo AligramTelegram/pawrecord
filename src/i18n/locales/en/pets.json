@@ -1,0 +1,49 @@
+{
+  "title": "My Pets",
+  "add_pet": "Add Pet",
+  "edit_pet": "Edit Pet",
+  "pet_profile": "Pet Profile",
+  "fields": {
+    "name": "Name",
+    "name_placeholder": "e.g. Max",
+    "species": "Species",
+    "breed": "Breed",
+    "breed_placeholder": "e.g. Golden Retriever",
+    "date_of_birth": "Date of Birth",
+    "gender": "Gender",
+    "color": "Color / Markings",
+    "microchip": "Microchip ID",
+    "photo": "Photo"
+  },
+  "species": {
+    "dog": "Dog",
+    "cat": "Cat",
+    "rabbit": "Rabbit",
+    "bird": "Bird",
+    "other": "Other"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female",
+    "unknown": "Unknown"
+  },
+  "age": {
+    "years": "{{count}} years",
+    "years_one": "{{count}} year",
+    "months": "{{count}} months",
+    "months_one": "{{count}} month",
+    "days": "{{count}} days",
+    "days_one": "{{count}} day"
+  },
+  "delete_confirm": "Delete {{name}}?",
+  "delete_confirm_sub": "This will permanently delete all health records for {{name}}.",
+  "sections": {
+    "vaccines": "Vaccines",
+    "medications": "Medications",
+    "weight": "Weight",
+    "visits": "Vet Visits"
+  },
+  "empty_title": "Add your first pet",
+  "empty_subtitle": "Track vaccinations, medications, vet visits, and more — all in one place.",
+  "empty_cta": "Add a Pet"
+}

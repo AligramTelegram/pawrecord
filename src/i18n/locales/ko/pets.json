@@ -1,0 +1,12 @@
+{
+  "title": "내 반려동물", "add_pet": "반려동물 추가", "edit_pet": "반려동물 편집", "pet_profile": "프로필",
+  "fields": { "name": "이름", "name_placeholder": "예: 맥스", "species": "종류", "breed": "품종", "breed_placeholder": "예: 골든 리트리버", "date_of_birth": "생년월일", "gender": "성별", "color": "털색 / 특징", "microchip": "마이크로칩 ID", "photo": "사진" },
+  "species": { "dog": "강아지", "cat": "고양이", "rabbit": "토끼", "bird": "새", "other": "기타" },
+  "gender": { "male": "수컷", "female": "암컷", "unknown": "알 수 없음" },
+  "age": { "years": "{{count}}세", "years_one": "{{count}}세", "months": "{{count}}개월", "months_one": "{{count}}개월", "days": "{{count}}일", "days_one": "{{count}}일" },
+  "delete_confirm": "{{name}}을(를) 삭제하시겠습니까?", "delete_confirm_sub": "{{name}}의 모든 건강 기록이 영구적으로 삭제됩니다.",
+  "sections": { "vaccines": "백신", "medications": "약", "weight": "체중", "visits": "동물병원 방문" },
+  "empty_title": "첫 번째 반려동물 추가",
+  "empty_subtitle": "예방접종, 약, 동물병원 기록을 한 곳에서 관리하세요.",
+  "empty_cta": "반려동물 추가"
+}

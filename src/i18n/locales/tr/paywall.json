@@ -1,0 +1,18 @@
+{
+  "trial_title": "7 Gün Ücretsiz Premium Dene",
+  "trial_subtitle": "Sonra ₺39,99 / ay. İstediğinizde iptal edin.",
+  "features": { "unlimited_pets": "Sınırsız evcil hayvan", "pdf_report": "PDF veteriner raporu", "icloud_backup": "iCloud yedekleme", "unlimited_records": "Sınırsız sağlık kaydı", "photo_gallery": "Fotoğraf galerisi", "appointments": "Randevu takvimi" },
+  "plans": { "monthly": { "label": "Aylık", "price": "₺39,99", "period": "aylık", "trial": "7 günlük ücretsiz deneme" }, "annual": { "label": "Yıllık", "price": "₺249,99", "period": "yıllık", "save_badge": "%48 tasarruf", "trial": "14 günlük ücretsiz deneme", "monthly_equivalent": "Sadece ₺20,83/ay" } },
+  "cta_trial": "Ücretsiz Denemeyi Başlat", "cta_subscribe": "Devam Et",
+  "restore": "Satın Almaları Geri Yükle",
+  "legal": "Ayarlar > Abonelikler bölümünden istediğiniz zaman iptal edebilirsiniz. Deneme süresinin bitiminden 24 saat önce iptal edilmezse abonelik otomatik yenilenir.",
+  "links": { "privacy": "Gizlilik Politikası", "terms": "Kullanım Koşulları" },
+  "free_tier_prompt": "Ücretsiz Planla Devam Et",
+  "social_proof": "{{count}}+ evcil hayvan sahibi tarafından güvenilir",
+  "premium_badge": "Premium",
+  "restore_success": "Premium geri yüklendi! Hoş geldiniz.",
+  "restore_not_found": "Aktif abonelik bulunamadı.",
+  "purchase_error": "Bir şeyler ters gitti. Tekrar deneyin.",
+  "purchase_limit_title": "Premium'a Geç",
+  "purchase_limit_body": "Ücretsiz planda 1 evcil hayvan ekleyebilirsiniz. Sınırsız hayvan için Premium'a geçin."
+}

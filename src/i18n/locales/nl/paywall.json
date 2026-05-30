@@ -1,0 +1,18 @@
+{
+  "trial_title": "Probeer Premium 7 dagen gratis",
+  "trial_subtitle": "Daarna €3,99 / maand. Altijd opzegbaar.",
+  "features": { "unlimited_pets": "Onbeperkt huisdieren", "pdf_report": "PDF-dierenartserapporten", "icloud_backup": "iCloud-back-up", "unlimited_records": "Onbeperkt gezondheidsrecords", "photo_gallery": "Fotogalerij", "appointments": "Afspraakkalender" },
+  "plans": { "monthly": { "label": "Maandelijks", "price": "€3,99", "period": "per maand", "trial": "7 dagen gratis" }, "annual": { "label": "Jaarlijks", "price": "€24,99", "period": "per jaar", "save_badge": "48% besparen", "trial": "14 dagen gratis", "monthly_equivalent": "Slechts €2,08/maand" } },
+  "cta_trial": "Gratis starten", "cta_subscribe": "Doorgaan",
+  "restore": "Aankopen herstellen",
+  "legal": "Altijd opzegbaar via Instellingen > Abonnementen. Het abonnement wordt automatisch verlengd tenzij 24 uur voor het einde van de proefperiode opgezegd.",
+  "links": { "privacy": "Privacybeleid", "terms": "Gebruiksvoorwaarden" },
+  "free_tier_prompt": "Doorgaan met gratis plan",
+  "social_proof": "Vertrouwd door {{count}}+ huisdiereigenaren",
+  "premium_badge": "Premium",
+  "restore_success": "Premium hersteld! Welkom terug.",
+  "restore_not_found": "Geen actief abonnement gevonden.",
+  "purchase_error": "Er is iets misgegaan. Probeer het opnieuw.",
+  "purchase_limit_title": "Upgraden naar Premium",
+  "purchase_limit_body": "Het gratis plan staat 1 huisdier toe. Upgrade om onbeperkt huisdieren toe te voegen."
+}

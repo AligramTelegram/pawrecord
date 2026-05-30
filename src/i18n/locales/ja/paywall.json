@@ -1,0 +1,18 @@
+{
+  "trial_title": "7日間無料でプレミアムを試す",
+  "trial_subtitle": "その後 ¥600 / 月。いつでもキャンセル可能。",
+  "features": { "unlimited_pets": "ペット数無制限", "pdf_report": "PDF獣医レポート", "icloud_backup": "iCloudバックアップ", "unlimited_records": "健康記録無制限", "photo_gallery": "フォトギャラリー", "appointments": "予約カレンダー" },
+  "plans": { "monthly": { "label": "月払い", "price": "¥600", "period": "/ 月", "trial": "7日間無料トライアル" }, "annual": { "label": "年払い", "price": "¥3,600", "period": "/ 年", "save_badge": "48%お得", "trial": "14日間無料トライアル", "monthly_equivalent": "月々わずか¥300" } },
+  "cta_trial": "無料トライアルを開始", "cta_subscribe": "続ける",
+  "restore": "購入を復元",
+  "legal": "設定 > サブスクリプションでいつでもキャンセル可能。トライアル終了24時間前にキャンセルしない限り、サブスクリプションは自動更新されます。",
+  "links": { "privacy": "プライバシーポリシー", "terms": "利用規約" },
+  "free_tier_prompt": "無料プランで続ける",
+  "social_proof": "{{count}}人以上のペット家族に信頼されています",
+  "premium_badge": "プレミアム",
+  "restore_success": "プレミアムが復元されました！おかえりなさい。",
+  "restore_not_found": "有効なサブスクリプションが見つかりません。",
+  "purchase_error": "問題が発生しました。もう一度お試しください。",
+  "purchase_limit_title": "プレミアムにアップグレード",
+  "purchase_limit_body": "無料プランでは1匹のペットが登録できます。アップグレードして無制限のペットを追加しましょう。"
+}

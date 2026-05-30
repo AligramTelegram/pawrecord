@@ -1,0 +1,7 @@
+{
+  "title": "健康",
+  "vaccine": { "title": "ワクチン", "add": "ワクチンを追加", "edit": "ワクチンを編集", "fields": { "name": "ワクチン名", "name_placeholder": "例：狂犬病", "date_given": "接種日", "next_due": "次回接種日", "vet_name": "獣医師", "batch_number": "ロット番号", "notes": "メモ", "reminder": "リマインダーを有効にする" }, "status": { "up_to_date": "最新", "due_soon": "もうすぐ", "overdue": "期限切れ" } },
+  "medication": { "title": "薬", "add": "薬を追加", "edit": "薬を編集", "fields": { "name": "薬名", "dosage": "用量", "dosage_placeholder": "例：10mg", "frequency": "頻度", "start_date": "開始日", "end_date": "終了日", "times_per_day": "1日の回数", "notes": "メモ", "active": "有効" }, "frequency": { "daily": "毎日", "weekly": "毎週", "monthly": "毎月", "as_needed": "必要時" }, "ongoing": "継続中" },
+  "weight": { "title": "体重", "add": "体重を追加", "fields": { "weight_kg": "体重 (kg)", "date": "日付", "notes": "メモ" }, "chart_title": "体重推移", "current": "現在の体重", "trend_up": "↑ 前回より{{diff}}kg増加", "trend_down": "↓ 前回より{{diff}}kg減少", "trend_same": "変化なし" },
+  "visit": { "title": "動物病院", "add": "受診を追加", "edit": "受診を編集", "fields": { "date": "受診日", "reason": "受診理由", "vet_name": "獣医師", "clinic": "病院", "diagnosis": "診断", "treatment": "治療", "cost": "費用", "currency": "通貨", "follow_up": "次回受診日", "notes": "メモ" } }
+}
