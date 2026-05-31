@@ -36,16 +36,17 @@ export default function NewPetScreen() {
   const it = (key: string) => i18n.t(key as any);
   const router = useRouter();
   const { addPet, pets } = usePetsStore();
-  const { isPremium } = usePremium();
+  const { isPremium, isLoading } = usePremium();
 
   useEffect(() => {
+    if (isLoading) return; // RC henüz yüklenmedi, bekle
     if (!isPremium && pets.length >= 1) {
       Alert.alert(tp('purchase_limit_title'), tp('purchase_limit_body'), [
         { text: tc('actions.cancel'), style: 'cancel', onPress: () => router.back() },
         { text: 'Premium', onPress: () => { router.back(); router.push('/paywall'); } },
       ]);
     }
-  }, []);
+  }, [isLoading]); // isLoading false olunca kontrol et
   const f = tc('forms', { returnObjects: true }) as Record<string, string>;
   const g = tc('gender', { returnObjects: true }) as Record<string, string>;
 

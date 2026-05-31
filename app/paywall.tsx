@@ -28,8 +28,14 @@ export default function PaywallScreen() {
   const [selected, setSelected] = useState<'annual' | 'monthly'>('annual');
   const [offerings, setOfferings] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+  const [offeringsLoading, setOfferingsLoading] = useState(true);
 
-  useEffect(() => { getOfferings().then(setOfferings); }, []);
+  useEffect(() => {
+    getOfferings().then(o => {
+      setOfferings(o);
+      setOfferingsLoading(false);
+    }).catch(() => setOfferingsLoading(false));
+  }, []);
 
   async function handleSubscribe() {
     const pkg = selected === 'annual' ? offerings?.annual : offerings?.monthly;
@@ -134,14 +140,14 @@ export default function PaywallScreen() {
 
         {/* CTA */}
         <TouchableOpacity
-          style={[styles.cta, loading && { opacity: 0.6 }]}
+          style={[styles.cta, (loading || offeringsLoading) && { opacity: 0.6 }]}
           onPress={handleSubscribe}
-          disabled={loading}
+          disabled={loading || offeringsLoading}
           activeOpacity={0.85}
           accessibilityLabel={t('cta_trial')}
           accessibilityRole="button"
         >
-          {loading
+          {(loading || offeringsLoading)
             ? <ActivityIndicator color="#fff" />
             : <Text style={styles.ctaText}>{t('cta_trial')} →</Text>
           }

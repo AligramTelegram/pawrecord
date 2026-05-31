@@ -34,7 +34,7 @@ export default function PetDetailScreen() {
     up_to_date: { bg: Colors.semantic.successBg, text: Colors.semantic.success, label: tc('time.upcoming')  },
   };
   const { removePet } = usePetsStore();
-  const { isPremium } = usePremium();
+  const { isPremium, isLoading: premiumLoading } = usePremium();
 
   const [pet, setPet] = useState<Pet | null>(null);
   const [vaccines, setVaccines] = useState<Vaccine[]>([]);
@@ -58,6 +58,7 @@ export default function PetDetailScreen() {
   }, [pet]);
 
   async function handleExportPDF() {
+    if (premiumLoading) return; // RC yükleniyor, bekle
     if (!isPremium) { router.push('/paywall'); return; }
     if (!pet) return;
     await generatePetPDF({ pet, vaccines, medications, weights, visits });
