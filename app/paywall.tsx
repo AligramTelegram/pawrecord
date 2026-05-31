@@ -9,6 +9,7 @@ import { Colors } from '../src/constants/colors';
 import { Spacing } from '../src/constants/typography';
 import { getOfferings, purchasePackage, restorePurchases } from '../src/services/revenue-cat';
 import { useSubscriptionStore } from '../src/store/subscription';
+import { useSettingsStore } from '../src/store/settings';
 
 const { width } = Dimensions.get('window');
 
@@ -25,6 +26,7 @@ export default function PaywallScreen() {
   const router = useRouter();
   const { t } = useTranslation('paywall');
   const { setIsPremium } = useSubscriptionStore();
+  const { hasSeenOnboarding } = useSettingsStore();
   const [selected, setSelected] = useState<'annual' | 'monthly'>('annual');
   const [offerings, setOfferings] = useState<any>(null);
   const [loading, setLoading] = useState(false);
@@ -77,8 +79,11 @@ export default function PaywallScreen() {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
-        {/* Close */}
-        <TouchableOpacity style={styles.closeBtn} onPress={() => router.back()}>
+        {/* Close — onboarding'den geldiyse ana ekrana, yoksa geri */}
+        <TouchableOpacity
+          style={styles.closeBtn}
+          onPress={() => hasSeenOnboarding ? router.back() : router.replace('/(tabs)')}
+        >
           <Text style={styles.closeText}>✕</Text>
         </TouchableOpacity>
 
@@ -153,7 +158,17 @@ export default function PaywallScreen() {
           }
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.freeBtn} onPress={() => router.back()}>
+        <TouchableOpacity
+          style={styles.freeBtn}
+          onPress={() => {
+            if (!hasSeenOnboarding) {
+              // Onboarding'den geldiyse → direkt ana ekrana
+              router.replace('/(tabs)');
+            } else {
+              router.back();
+            }
+          }}
+        >
           <Text style={styles.freeBtnText}>{t('free_tier_prompt')}</Text>
         </TouchableOpacity>
 

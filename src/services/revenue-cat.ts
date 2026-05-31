@@ -28,9 +28,16 @@ export async function checkPremium(): Promise<boolean> {
   if (!Purchases) return false;
   try {
     const info = await Purchases.getCustomerInfo();
-    return info.entitlements.active['premium'] !== undefined;
+    const active = info.entitlements.active['premium'] !== undefined;
+    return active;
   } catch {
-    return false;
+    // RC'ye ulaşılamazsa (offline) cached customer info'yu dene
+    try {
+      const cached = await Purchases.getCustomerInfo();
+      return cached.entitlements.active['premium'] !== undefined;
+    } catch {
+      return false;
+    }
   }
 }
 
